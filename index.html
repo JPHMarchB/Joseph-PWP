@@ -6,44 +6,57 @@
 	<link href="./output.css" rel="stylesheet">
 	<title>Joseph's Portfolio</title>
 </head>
-<body class="bg-amber-200 *:text-orange-900">
+<body class="bg-[#fff0db]">
 
 <header>
+
+	<!-- Navigation bar -->
 	<nav class="mx-auto">
-		<div class="md:mt-4 flex justify-between bg-white space-x-8 p-8 text-black">
-			<h1 class="md:hidden">JM</h1>
-			<h1 class="hidden md:contents ms-20"><a href="/">Joseph Marchbanks</a></h1>
-			<button class="md:hidden border-gray-400 border h-6 w-6 rounded bg-white">&#9776;</button>
+		<div class="flex justify-between bg-[#bbaa8e] space-x-8 p-8 text-[#534a48] md:text-base lg:text-xl font-custom italic rounded-b-2xl border-2 border-black">
+
+			<!-- Navigation bar home -->
+			<h1 class="md:hidden text-3xl">JM</h1>
+			<h1 class="hidden md:contents ms-20"><a href="#landing-page">Joseph Marchbanks</a></h1>
+			<button class="md:hidden border-gray-400 border h-8 w-8 rounded bg-white">&#9776;</button>
+
+			<!-- Navigation bar links -->
 			<ul class="hidden md:flex space-x-2 gap-8 pe-20">
-				<li><a href="#about-me">About Me</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a>Resume</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>
+				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
+				<li class="hover:text-[#ded5b9]"><a>Resume</a></li>
+				<li class="border-2 border-black text-white bg-black w-28 text-center rounded-lg hover:scale-110"><a href="#contact">
+					Contact</a></li>
 			</ul>
 		</div>
 	</nav>
 </header>
 
 <main>
+
 	<!-- opening view -->
-	<section class="flex justify-between items-center text-black">
+	<section class="mt-20 flex justify-between items-center text-[#534a48] font-custom" id="landing-page">
+
 		<!-- opening text -->
 		<div class="ps-40 pb-5 *:pb-7">
-			<h1 class="lg:text-9xl md:text-6xl sm:text-3xl">here<br>Is<br>Text</h1>
-			<h2 class="lg:text-5xl md:text-3xl sm:text-xl">Some More Text</h2>
-			<h3 class="lg:text-3xl md:text-2xl sm:text-lg">Small little text</h3>
+			<h1 class="lg:text-9xl md:text-6xl sm:text-4xl hover:scale-105 tracking-widest">Hi,<br>I'm<br>Joe.</h1>
+			<h2 class="lg:text-5xl md:text-3xl sm:text-xl underline hover:scale-105">Javascript Web Developer</h2>
+			<h3 class="lg:text-3xl md:text-2xl sm:text-lg hover:scale-105">Albuquerque, NM</h3>
 		</div>
+
 		<!-- opening image -->
 		<div class="pe-40">
-			<img  class="h-[43rem]" src="professional-pic-big.jpeg" alt="picture of me">
+			<img  class="h-[43rem] border-black border-2 rounded-lg md:shadow-[35px_35px_0_0_black] hover:scale-105"
+				  src="professional-pic-big.jpeg" alt="picture of me">
 		</div>
 	</section>
 
 	<!-- scroll effect -->
 	<section id="scroll-effect">
-		<div class="bg-black text-center p-40 mt-56">
-			<h2 class="text-8xl pb-10">Intro of Me</h2>
-			<p class="text-4xl">
+
+		<!-- scroll effect text -->
+		<div class="bg-black text-center lg:p-40 md:p-40 sm:p-20 mt-56 font-custom">
+			<h2 class="lg:text-8xl md:text-6xl sm:text-4xl pb-10">Intro of Me</h2>
+			<p class="lg:text-4xl md:text-2xl sm:text-xl">
 				Smaller text that introduces some things about me, what I can do and skills abilities
 				usually something you'd see in a resume summary. Some other cool facts about me and other stuff too and
 				yeah
@@ -52,33 +65,57 @@
 	</section>
 
 	<!-- About Me -->
-	<section class="lg:flex md:block justify-between items-center gap-16 text-black mt-56" id="about-me">
-		<!-- about image -->
-		<div class="ps-40">
-			<img  class="" src="professional-pic.jpeg" alt="another picture of me">
+	<section class="lg:flex md:block justify-between items-center mt-56 font-custom text-[#534a48]" id="about-me">
+
+		<!-- About me image -->
+		<div class="">
+			<img  class="border-black border-2 rounded-lg w-[100rem]" src="professional-pic.jpeg"
+				  alt="another picture of me">
 		</div>
-		<!-- about text -->
-		<div class="pe-40 *:pb-10">
-			<h2 class="lg:text-8xl md:text-6xl sm:text-3xl">About Me</h2>
-			<p class="lg:text-4xl md:text-3xl sm:text-xl">
-				Some info about me and what I do, my story and some other things to fill up space and get me a job.
+
+		<!-- About me text -->
+		<div class="md:p-28">
+			<h2 class="lg:text-8xl md:text-6xl sm:text-3xl tracking-wider pb-4 underline">About Me</h2>
+			<p class="lg:text-lg md:text-base sm:text-sm tracking-wider font-serif font-bold lg:me-80">
+				Hey there! I'm Joseph, a passionate Javascript web developer with a knack for crafting immersive
+				digital experiences. Born and raised in the land of enchantment Albuquerque, New Mexico, I've
+				always been inspired by the blend of rich culture and innovative spirit that defines my hometown.
+				<br><br>
+				I am an enthusiastic newcomer to the tech scene with a boundless curiosity and a hunger for knowledge, I
+				thrive on turning ideas into reality, whether it's building responsive front-end interfaces or architecting
+				robust back-end systems. From conceptualization to deployment, I'm committed to delivering solutions that
+				not only meet but exceed expectations.
+				<br><br>
+				Outside of coding, you can find me exploring the great outdoors,
+				or learning a new piece on the piano. I believe in the power of continuous learning and embrace every
+				opportunity to expand my skill set and stay ahead of the curve in this ever-evolving digital landscape.
+				<br><br>
+				If you're looking for a dedicated professional who combines technical expertise with a strategic mindset,
+				I'd love to connect and explore how we can bring your digital vision to life. Let's collaborate and create
+				something extraordinary together!
 			</p>
 		</div>
 	</section>
 
 	<!-- Projects -->
-	<section class="mt-56" id="projects">
-		<h2 class="text-center text-9xl">MY WORKS</h2>
-		<!-- Project display 1-->
-		<div class="lg:flex gap-16 mt-32 ps-40 md:block">
+	<section class="mt-56 font-custom" id="projects">
+		<h2 class="text-center text-9xl hover:underline">MY WORKS</h2>
+
+		<!-- Project display 1 -->
+		<div class="lg:flex gap-16 mt-32 ps-40 md:block text-[#534a48]">
 			<img src="https://fakeimg.pl/400x400" alt="project image">
+
+			<!-- Display 1 text -->
 			<div class="me-40">
 				<h2 class="text-7xl pb-10">Project Title</h2>
 				<p class="text-4xl">Project description that gives an overview of the project not too long though.</p>
 			</div>
 		</div>
-		<!-- Project display 2-->
-		<div class="flex gap-16 mt-32 ps-40">
+
+		<!-- Project display 2 -->
+		<div class="flex gap-16 mt-32 ps-40 text-[#534a48]">
+
+			<!-- Display 2 text -->
 			<div>
 				<h2 class="text-7xl pb-10">Project Title</h2>
 				<p class="text-4xl">Project description that gives an overview of the project not too long though.</p>
@@ -88,16 +125,46 @@
 	</section>
 
 	<!-- Contact -->
-	<section id="contact">
+	<section id="contact" class="mt-56 font-custom">
+		<form class="*:mb-8 border-black border-2 inline-block">
 
+			<!-- Contact name input -->
+			<div class="*:block">
+				<label for="full-name">Full Name:</label>
+				<input type="text" name="full-name" id="full-name" required>
+			</div>
+
+			<!-- Contact email input -->
+			<div class="*:block">
+				<label for="email-box">Email:</label>
+				<input type="email" name="email-box" id="email-box" required>
+			</div>
+
+			<!-- Contact message input -->
+			<div class="*:block">
+				<label for="message-box">Message:</label>
+				<textarea name="message-box" id="message-box" required></textarea>
+			</div>
+
+			<!-- Contact submit -->
+			<div class="inline">
+				<input type="submit" value="Let's Talk!" class="bg-black p-2 text-white rounded-lg">
+			</div>
+
+			<!-- Contact reset -->
+			<div class="inline">
+				<input type="reset" value="Reset" class="bg-black p-2 text-white rounded-lg">
+			</div>
+		</form>
 	</section>
-
-
-	<footer>
-
-	</footer>
-
 </main>
+
+<!-- Footer -->
+<footer>
+	<div class="bg-[#506751] h-28 mt-56 font-custom">
+
+	</div>
+</footer>
 
 </body>
 </html>

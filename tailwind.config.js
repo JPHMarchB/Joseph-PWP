@@ -21,6 +21,10 @@ module.exports = {
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'custom': ['Abril Fatface', 'serif']
+      }
+    },
   },
 }
