@@ -1097,12 +1097,20 @@ html{
   margin-top: 14rem;
 }
 
+.block{
+  display: block;
+}
+
 .inline-block{
   display: inline-block;
 }
 
 .flex{
   display: flex;
+}
+
+.contents{
+  display: contents;
 }
 
 .hidden{
@@ -1446,6 +1454,14 @@ html{
 
   .md\:bg-\[url\(\'\/professional-pic-big\.jpeg\'\)\]{
     background-image: url('/professional-pic-big.jpeg');
+  }
+
+  .md\:bg-\[url\(\'\/website-image\/professional-pic-big\.jpeg\'\)\]{
+    background-image: url('/website-image/professional-pic-big.jpeg');
+  }
+
+  .md\:bg-\[url\(\'website-images\/professional-pic-big\.jpeg\'\)\]{
+    background-image: url('website-images/professional-pic-big.jpeg');
   }
 
   .md\:p-20{
