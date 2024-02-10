@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio website for Joseph Marchbanks">
 	<link href="./output.css" rel="stylesheet">
-	<title>Joseph's Portfolio</title>
+	<title>Joseph's Portfolio Website</title>
 </head>
 <body class="bg-[#d9b99b]">
 
@@ -12,20 +13,28 @@
 
 	<!-- Navigation bar -->
 	<nav class="mx-auto">
-		<div class="flex justify-between bg-[#ca9465] space-x-8 p-8 text-[#55362a] md:text-base lg:text-xl font-custom italic md:rounded-b-2xl border-2 border-black">
+		<div class="flex justify-between bg-[#ca9465] text-[#55362a] md:text-base lg:text-xl font-custom italic p-8 border-black border-2 lg:rounded-b-2xl">
 
 			<!-- Navigation bar home -->
 			<h1 class="md:hidden text-3xl">JM</h1>
-			<h1 class="hidden md:contents ms-20 hover:text-black"><a href="#landing-page">Joseph Marchbanks</a></h1>
-			<button class="md:hidden border-gray-400 border h-8 w-8 rounded bg-white">&#9776;</button>
+			<h1 class="hidden md:contents ps-20 hover:text-black"><a href="#landing-page">Joseph Marchbanks</a></h1>
+			<button class="md:hidden text-3xl focus:outline-2 cursor-pointer">&#9776;</button>
+
+			<!-- hamburger content -->
+<!--			<ul class="hidden bg-gray-500">-->
+<!--				<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>-->
+<!--				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>-->
+<!--				<li class="hover:text-[#ded5b9]"><a>Resume</a></li>-->
+<!--				<li class="hover:text-[#ded5b9]"><a href="#contact">Contact</a></li>-->
+<!--			</ul>-->
 
 			<!-- Navigation bar links -->
-			<ul class="hidden md:flex space-x-2 gap-8 pe-20">
+			<ul class="hidden md:flex gap-8 pe-20">
 				<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>
 				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
 				<li class="hover:text-[#ded5b9]"><a>Resume</a></li>
-				<li class="border-2 border-black text-white bg-black w-28 text-center rounded-lg hover:scale-125 drop-shadow-lg"><a href="#contact">
-					Contact</a></li>
+				<li class="border-2 border-black text-white bg-black w-28 text-center rounded-lg hover:scale-125 drop-shadow-lg hover:invert ease-in duration-300">
+					<a href="#contact">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -34,19 +43,25 @@
 <main>
 
 	<!-- opening view -->
-	<section class="flex justify-between items-center text-white lg:text-[#55362a] font-custom
-	bg-[url('website-images/professional-pic-big.jpeg')] lg:bg-none bg-cover md:p-20 mt-10 lg:mt-0 border-y-4 border-black lg:border-none" id="landing-page">
+	<section class="flex justify-center items-center gap-28 bg-[url('website-images/professional-pic-big.jpeg')] lg:bg-none bg-cover
+	text-white lg:text-[#55362a] font-custom p-24 border-y-4 border-black lg:border-none" id="landing-page">
 
 		<!-- opening text -->
-		<div class=" p-10 md:ps-40 pb-5 *:pb-7">
-			<h1 class="lg:text-9xl md:text-6xl text-4xl hover:scale-105 tracking-widest">Hi,<br>I'm<br>Joe.</h1>
-			<h2 class="lg:text-5xl md:text-3xl sm:text-xl underline hover:scale-105">Javascript Web Developer</h2>
-			<h3 class="lg:text-3xl md:text-2xl sm:text-lg hover:scale-105">Albuquerque, NM</h3>
+		<div class="*:pb-7 *:ease-in *:duration-300">
+			<h1 class="text-4xl md:text-6xl lg:text-9xl tracking-widest hover:scale-105 hover:font-outline hover:text-transparent">
+				Hi,<br>I'm<br>Joe.
+			</h1>
+			<h2 class="text-xl md:text-3xl lg:text-5xl underline hover:scale-105 hover:font-outline hover:text-transparent">
+				Javascript Web Developer
+			</h2>
+			<h3 class="text-lg md:text-2xl lg:text-3xl hover:scale-105 hover:font-outline hover:text-transparent">
+				Albuquerque, NM
+			</h3>
 		</div>
 
 		<!-- opening image -->
-		<div class="pe-40">
-			<img class="h-[43rem] border-black border-2 rounded-lg lg:shadow-[35px_35px_0_0_black] hover:scale-105 hidden"
+		<div>
+			<img class="hidden lg:flex h-[40rem] border-black border-2 rounded-lg lg:shadow-[35px_35px_0_0_black] hover:lg:shadow-[35px_35px_0_0_white] hover:scale-105 ease-in duration-300"
 				 src="website-images/professional-pic-big.jpeg" alt="picture of me">
 		</div>
 	</section>
@@ -55,31 +70,29 @@
 	<section id="scroll-effect">
 
 		<!-- scroll effect text -->
-		<div class="bg-black text-center lg:p-40 md:p-40 sm:p-20 mt-56 font-custom">
-			<h2 class="lg:text-8xl md:text-6xl sm:text-4xl pb-10">Who Is Joe?</h2>
-			<p class="text-xl lg:text-4xl md:text-2xl sm:text-xl font-serif lg:px-52">
-				A highly motivated individual with business acumen and fullstack web development expertise. I love learning
-				and always push myself to expand my skill set. I have a strong work ethic, work effectively on my own
-				and within teams. I leverage my unique skills, knowledge and experiences to enhance my work and deliver
-				meaningful results.
+		<div class="bg-black font-custom text-center p-10 md:p-40 mt-32 lg:mt-56 hover:text-white ease-in duration-300">
+			<h2 class="text-4xl md:text-6xl lg:text-8xl pb-10">Who Is Joe?</h2>
+			<p class="text-base md:text-2xl lg:text-4xl font-serif lg:px-42">
+				Highly motivated full-stack web developer with strong business acumen. Committed to continuous learning,
+				adept at working independently or collaboratively. Leveraging unique skills to deliver impactful results.
 			</p>
 		</div>
 	</section>
 
 	<!-- About Me -->
-	<section class="lg:flex md:block justify-between items-center gap-32 mt-56 font-custom text-[#55362a]" id="about-me">
+	<section class="mt-32 lg:mt-48 font-custom text-[#55362a] px-5 md:px-20 lg:px-40" id="about-me">
 
-		<!-- About me image -->
-<!--		<div class="">-->
-<!--			<img class="border-black border-2 rounded-lg w-[100rem] ms-40" src="website-images/professional-pic.jpeg"-->
-<!--				  alt="another picture of me">-->
-<!--		</div>-->
+        <!-- About me image -->
+		<div class="">
+			<img class="border-black border-2 rounded-lg w-full" src="website-images/dacd1c01-25a9-4bf3-b7b5-d360aeee78e9.jpeg"
+				  alt="another picture of me">
+		</div>
 
 		<!-- About me text -->
-		<div class="md:p-28">
-			<h2 class="lg:text-8xl md:text-6xl sm:text-3xl tracking-wider pb-4 underline">About Me</h2>
-			<p class="lg:text-lg md:text-base sm:text-sm tracking-wider font-serif font-bold lg:me-80">
-				Hey there! I'm Joseph, a passionate Javascript web developer with a knack for crafting immersive
+		<div class="mt-10">
+			<h2 class="text-3xl md:text-6xl lg:text-8xl underline tracking-wider pb-4">About Me</h2>
+			<p class="text-sm md:text-base lg:text-xl tracking-wider font-bold font-serif">
+				Hey there! I'm Joseph, a passionate Javascript web developer with a knack for crafting fun
 				digital experiences. Born and raised in the land of enchantment, New Mexico, I've
 				always been inspired by the blend of rich culture and innovative spirit that defines my hometown.
 				<br><br>
@@ -89,7 +102,7 @@
 				not only meet but exceed expectations.
 				<br><br>
 				Outside of coding, you can find me exploring the great outdoors,
-				or learning a new piece on the piano. I believe in the power of continuous learning and embrace every
+				or learning a new piece on the piano! I believe in the power of continuous learning and embrace every
 				opportunity to expand my skill set and stay ahead of the curve in this ever-evolving digital landscape.
 				<br><br>
 				If you're looking for a dedicated professional who combines technical expertise with a strategic mindset,
@@ -100,58 +113,66 @@
 	</section>
 
 	<!-- Projects -->
-	<section class="mt-56 font-custom text-[#332211] border-b-black border-b-4" id="projects">
+	<section class="font-custom text-[#332211] border-b-black border-b-4 mt-32 lg:mt-56 *:mb-32" id="projects">
 		<h2 class="text-center text-4xl md:text-9xl hover:underline">MY WORKS</h2>
 
 		<!-- Project display 1 -->
-		<div class="block lg:flex gap-16 mt-16 md:ps-40 text-[#55362a]">
+		<div class="block lg:flex gap-16 text-[#55362a] md:ps-40">
 			<img src="https://fakeimg.pl/400x400" alt="project image">
 
 			<!-- Display 1 text -->
-			<div class="me-40">
-				<h2 class="text-7xl pb-10">Project Title</h2>
-				<p class="text-4xl">Project description that gives an overview of the project not too long though.</p>
+			<div class="md:me-40">
+				<h2 class="text-4xl md:text-5xl lg:text-7xl pb-5">Project Title</h2>
+				<p class="text-xl md:text-2xl lg:text-4xl font-serif">Project description that gives an overview of the
+					project not too long though.</p>
 			</div>
 		</div>
 
 		<!-- Project display 2 -->
-		<div class="block lg:flex flex-col-reverse gap-16 mt-32 md:ps-40 text-[#55362a]">
+		<div class="block lg:flex gap-16 text-[#55362a] md:ps-40">
 
 			<!-- Display 2 text -->
+
+			<!-- mobile image view -->
+			<img class="block md:hidden me-40" src="https://fakeimg.pl/400x400" alt="project image">
 			<div>
-				<h2 class="text-7xl pb-10">Project Title</h2>
-				<p class="text-4xl">Project description that gives an overview of the project not too long though.</p>
+				<h2 class="text-4xl md:text-5xl lg:text-7xl pb-5">Project Title</h2>
+				<p class="text-xl md:text-2xl lg:text-4xl font-serif">Project description that gives an overview of the
+					project not too long though.</p>
 			</div>
-			<img class="me-40" src="https://fakeimg.pl/400x400" alt="project image">
+
+			<!-- desktop image view -->
+			<img class="hidden md:flex me-40" src="https://fakeimg.pl/400x400" alt="project image">
 		</div>
 	</section>
 
 	<!-- Contact -->
-	<section id="contact" class="mt-56 font-custom block md:flex justify-center items-center gap-16">
-		<form class="*:mb-8 inline-block">
+	<section id="contact" class="flex justify-center items-center font-custom text-[#332211] mt-56">
+		<div class="block md:flex justify-center items-center gap-16">
+		<form class="inline-block *:mb-8">
 
 			<!-- Contact name input -->
 			<div class="*:block">
 				<label for="full-name">Full Name:</label>
-				<input type="text" name="full-name" id="full-name" class="p-2 rounded-lg bg-[#cccccc] outline-none font-serif w-full" required>
+				<input type="text" name="full-name" id="full-name" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full" required>
 			</div>
 
 			<!-- Contact email input -->
 			<div class="*:block">
 				<label for="email-box">Email:</label>
-				<input type="email" name="email-box" id="email-box" class="p-2 rounded-lg bg-[#cccccc] outline-none font-serif w-full" required>
+				<input type="email" name="email-box" id="email-box" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full" required>
 			</div>
 
 			<!-- Contact message input -->
 			<div class="*:block">
 				<label for="message-box">Message:</label>
-				<textarea name="message-box" id="message-box" class="p-2 rounded-lg bg-[#cccccc] outline-none font-serif w-full h-28" required></textarea>
+				<textarea name="message-box" id="message-box" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full h-28 overflow-hidden" required maxlength="500"></textarea>
 			</div>
 
 			<!-- Contact buttons -->
 			<div class="flex justify-center gap-8 *:w-28 *:cursor-pointer">
-				<input type="submit" value="Let's Talk!" class="bg-black p-2 text-white rounded-lg hover:opacity-85 hover:scale-105">
-				<input type="reset" value="Reset" class="bg-black p-2 text-white rounded-lg hover:opacity-85 hover:scale-95">
+				<input type="submit" value="Let's Talk!" class="bg-black text-white rounded-lg p-2 hover:opacity-85 hover:scale-105">
+				<input type="reset" value="Reset" class="bg-black text-white rounded-lg p-2 hover:opacity-85 hover:scale-95">
 			</div>
 		</form>
 
@@ -167,29 +188,30 @@
 			<!-- Contact link icons -->
 			<div class="flex gap-8 mt-10">
 				<a href="https://www.linkedin.com/in/joseph-marchbanks-508a362a4/" target="_blank">
-					<img src="website-images/linkedin.svg" alt="LinkedIn Icon" class="w-14 hover:scale-105">
+					<img src="website-images/linkedin.svg" alt="LinkedIn Icon" class="w-14 hover:scale-105 hover:invert">
 				</a>
 				<a href="https://github.com/JPHMarchB" target="_blank">
-					<img src="website-images/github.svg" alt="GitHub Icon" class="w-14 hover:scale-105">
+					<img src="website-images/github.svg" alt="GitHub Icon" class="w-14 hover:scale-105 hover:invert">
 				</a>
 			</div>
+		</div>
 		</div>
 	</section>
 </main>
 
 <!-- Footer -->
 <footer>
-	<div class="bg-[#506751] mt-56 font-custom p-10">
+	<div class="bg-[#506751] font-custom text-white mt-56 p-10">
 		<div>
-			<ul class="flex justify-center items-center space-x-2 gap-8">
+			<ul class=" text-sm md:text-lg flex justify-center items-center gap-8">
 				<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>
-			<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
-			<li class="hover:text-[#ded5b9]"><a>Resume</a></li>
-			<li class="hover:text-[#ded5b9]"><a
+				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
+				<li class="hover:text-[#ded5b9]"><a>Resume</a></li>
+				<li class="hover:text-[#ded5b9]"><a
 					href="#contact">Contact</a></li>
 		</ul>
 		</div>
-		<div class="flex justify-center items-center space-x-2 gap-8 pt-5">>
+		<div class="flex justify-center items-center gap-8 mt-5">
 			<a href="https://www.linkedin.com/in/joseph-marchbanks-508a362a4/" target="_blank">
 				<img src="website-images/linkedin.svg" alt="LinkedIn Icon" class="w-10 hover:scale-105">
 			</a>
