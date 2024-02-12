@@ -13,23 +13,35 @@
 
 	<!-- Navigation bar -->
 	<nav class="mx-auto">
-		<div class="flex justify-between bg-[#ca9465] text-[#55362a] md:text-base lg:text-xl font-custom italic p-8 border-black border-2 lg:rounded-b-2xl">
+
+		<!-- Navigation content -->
+		<div class="flex justify-between items-center bg-[#ca9465] text-[#55362a] md:text-base lg:text-xl font-custom p-7 border-black border-2 lg:rounded-b-2xl">
 
 			<!-- Navigation bar home -->
-			<h1 class="md:hidden text-3xl">JM</h1>
-			<h1 class="hidden md:contents ps-20 hover:text-black"><a href="#landing-page">Joseph Marchbanks</a></h1>
-			<button class="md:hidden text-3xl focus:outline-2 cursor-pointer">&#9776;</button>
+			<h1 class="lg:hidden text-3xl italic">JM</h1>
+			<h1 class="hidden lg:contents italic ps-20 hover:text-black"><a href="#landing-page">Joseph Marchbanks</a></h1>
 
-			<!-- hamburger content -->
-<!--			<ul class="hidden bg-gray-500">-->
-<!--				<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>-->
-<!--				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>-->
-<!--				<li class="hover:text-[#ded5b9]"><a>Resume</a></li>-->
-<!--				<li class="hover:text-[#ded5b9]"><a href="#contact">Contact</a></li>-->
-<!--			</ul>-->
+			<!-- Hamburger-drop-down -->
+			<div class="flex-none">
+				<ul class="menu menu-horizontal">
+					<li>
+						<details>
+							<summary class="lg:hidden text-3xl focus:outline-2 cursor-pointer">
+								&#9776;
+							</summary>
+							<ul class="bg-base-100 text-white italic p-2 rounded-t-none">
+								<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>
+								<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
+								<li class="hover:text-[#ded5b9]"><a>Resume</a></li>
+								<li class="hover:text-[#ded5b9]"><a href="#contact">Contact</a></li>
+							</ul>
+						</details>
+					</li>
+				</ul>
+			</div>
 
 			<!-- Navigation bar links -->
-			<ul class="hidden md:flex gap-8 pe-20">
+			<ul class="hidden lg:flex gap-8 italic pe-14">
 				<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>
 				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
 				<li class="hover:text-[#ded5b9]"><a>Resume</a></li>
