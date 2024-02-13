@@ -509,22 +509,19 @@ html{
 }
 
 :root{
-  color-scheme: dark;
-  --b2: 0.17522 0.007709 17.911578;
-  --b3: 0.162032 0.007129 17.911578;
+  color-scheme: light;
   --in: 0.7206 0.191 231.6;
   --su: 64.8% 0.150 160;
   --wa: 0.8471 0.199 83.87;
   --er: 0.7176 0.221 22.18;
-  --bc: 0.837682 0.001658 17.911578;
-  --sc: 0.139553 0.027077 168.327128;
-  --ac: 0.141257 0.02389 185.713193;
-  --nc: 0.861397 0.007806 171.364646;
+  --pc: 0.89824 0.06192 275.75;
+  --ac: 0.15352 0.0368 183.61;
   --inc: 0 0 0;
   --suc: 0 0 0;
   --wac: 0 0 0;
   --erc: 0 0 0;
   --rounded-box: 1rem;
+  --rounded-btn: 0.5rem;
   --rounded-badge: 1.9rem;
   --animation-btn: 0.25s;
   --animation-input: .2s;
@@ -532,13 +529,117 @@ html{
   --border-btn: 1px;
   --tab-border: 1px;
   --tab-radius: 0.5rem;
-  --p: 0.686283 0.185567 148.958922;
-  --pc: 0 0 0;
-  --s: 0.697764 0.135385 168.327128;
-  --a: 0.706285 0.119451 185.713193;
-  --n: 0.306985 0.039032 171.364646;
-  --b1: 0.188409 0.00829 17.911578;
-  --rounded-btn: 1.9rem;
+  --p: 0.4912 0.3096 275.75;
+  --s: 0.6971 0.329 342.55;
+  --sc: 0.9871 0.0106 342.55;
+  --a: 0.7676 0.184 183.61;
+  --n: 0.321785 0.02476 255.701624;
+  --nc: 0.894994 0.011585 252.096176;
+  --b1: 1 0 0;
+  --b2: 0.961151 0 0;
+  --b3: 0.924169 0.00108 197.137559;
+  --bc: 0.278078 0.029596 256.847952;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme: dark;
+    --in: 0.7206 0.191 231.6;
+    --su: 64.8% 0.150 160;
+    --wa: 0.8471 0.199 83.87;
+    --er: 0.7176 0.221 22.18;
+    --pc: 0.13138 0.0392 275.75;
+    --sc: 0.1496 0.052 342.55;
+    --ac: 0.14902 0.0334 183.61;
+    --inc: 0 0 0;
+    --suc: 0 0 0;
+    --wac: 0 0 0;
+    --erc: 0 0 0;
+    --rounded-box: 1rem;
+    --rounded-btn: 0.5rem;
+    --rounded-badge: 1.9rem;
+    --animation-btn: 0.25s;
+    --animation-input: .2s;
+    --btn-focus-scale: 0.95;
+    --border-btn: 1px;
+    --tab-border: 1px;
+    --tab-radius: 0.5rem;
+    --p: 0.6569 0.196 275.75;
+    --s: 0.748 0.26 342.55;
+    --a: 0.7451 0.167 183.61;
+    --n: 0.313815 0.021108 254.139175;
+    --nc: 0.746477 0.0216 264.435964;
+    --b1: 0.253267 0.015896 252.417568;
+    --b2: 0.232607 0.013807 253.100675;
+    --b3: 0.211484 0.01165 254.087939;
+    --bc: 0.746477 0.0216 264.435964;
+  }
+}
+
+[data-theme=light]{
+  color-scheme: light;
+  --in: 0.7206 0.191 231.6;
+  --su: 64.8% 0.150 160;
+  --wa: 0.8471 0.199 83.87;
+  --er: 0.7176 0.221 22.18;
+  --pc: 0.89824 0.06192 275.75;
+  --ac: 0.15352 0.0368 183.61;
+  --inc: 0 0 0;
+  --suc: 0 0 0;
+  --wac: 0 0 0;
+  --erc: 0 0 0;
+  --rounded-box: 1rem;
+  --rounded-btn: 0.5rem;
+  --rounded-badge: 1.9rem;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --tab-radius: 0.5rem;
+  --p: 0.4912 0.3096 275.75;
+  --s: 0.6971 0.329 342.55;
+  --sc: 0.9871 0.0106 342.55;
+  --a: 0.7676 0.184 183.61;
+  --n: 0.321785 0.02476 255.701624;
+  --nc: 0.894994 0.011585 252.096176;
+  --b1: 1 0 0;
+  --b2: 0.961151 0 0;
+  --b3: 0.924169 0.00108 197.137559;
+  --bc: 0.278078 0.029596 256.847952;
+}
+
+[data-theme=dark]{
+  color-scheme: dark;
+  --in: 0.7206 0.191 231.6;
+  --su: 64.8% 0.150 160;
+  --wa: 0.8471 0.199 83.87;
+  --er: 0.7176 0.221 22.18;
+  --pc: 0.13138 0.0392 275.75;
+  --sc: 0.1496 0.052 342.55;
+  --ac: 0.14902 0.0334 183.61;
+  --inc: 0 0 0;
+  --suc: 0 0 0;
+  --wac: 0 0 0;
+  --erc: 0 0 0;
+  --rounded-box: 1rem;
+  --rounded-btn: 0.5rem;
+  --rounded-badge: 1.9rem;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --tab-radius: 0.5rem;
+  --p: 0.6569 0.196 275.75;
+  --s: 0.748 0.26 342.55;
+  --a: 0.7451 0.167 183.61;
+  --n: 0.313815 0.021108 254.139175;
+  --nc: 0.746477 0.0216 264.435964;
+  --b1: 0.253267 0.015896 252.417568;
+  --b2: 0.232607 0.013807 253.100675;
+  --b3: 0.211484 0.01165 254.087939;
+  --bc: 0.746477 0.0216 264.435964;
 }
 
 *, ::before, ::after{
@@ -1158,6 +1259,34 @@ html{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.static{
+  position: static;
+}
+
+.fixed{
+  position: fixed;
+}
+
+.sticky{
+  position: sticky;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.float-left{
+  float: left;
+}
+
+.m-20{
+  margin: 5rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1181,6 +1310,10 @@ html{
 
 .mt-56{
   margin-top: 14rem;
+}
+
+.mt-16{
+  margin-top: 4rem;
 }
 
 .block{
@@ -1207,6 +1340,23 @@ html{
   height: 40rem;
 }
 
+.h-auto{
+  height: auto;
+}
+
+.h-max{
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-96{
+  height: 24rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -1221,6 +1371,10 @@ html{
 
 .w-full{
   width: 100%;
+}
+
+.w-auto{
+  width: auto;
 }
 
 .flex-none{
@@ -1321,6 +1475,11 @@ html{
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-base-300{
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
+}
+
 .bg-\[url\(\'website-images\/professional-pic-big\.jpeg\'\)\]{
   background-image: url('website-images/professional-pic-big.jpeg');
 }
@@ -1343,6 +1502,18 @@ html{
 
 .p-7{
   padding: 1.75rem;
+}
+
+.p-20{
+  padding: 5rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-5{
@@ -1368,6 +1539,18 @@ html{
 
 .ps-20{
   padding-inline-start: 5rem;
+}
+
+.pe-2{
+  padding-inline-end: 0.5rem;
+}
+
+.ps-4{
+  padding-inline-start: 1rem;
+}
+
+.pe-4{
+  padding-inline-end: 1rem;
 }
 
 .text-center{
@@ -1450,6 +1633,10 @@ html{
 
 .underline{
   text-decoration-line: underline;
+}
+
+.opacity-85{
+  opacity: 0.85;
 }
 
 .outline-none{
@@ -1581,9 +1768,9 @@ html{
     padding: 10rem;
   }
 
-  .md\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .md\:px-40{
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .md\:ps-40{
@@ -1660,9 +1847,9 @@ html{
     background-image: none;
   }
 
-  .lg\:px-40{
-    padding-left: 10rem;
-    padding-right: 10rem;
+  .lg\:px-52{
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .lg\:text-3xl{
