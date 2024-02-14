@@ -17,7 +17,7 @@
 	<nav class="mx-auto">
 
 		<!-- Navigation content -->
-		<div class="flex justify-between items-center bg-[#ca9465] text-[#55362a] md:text-base lg:text-xl font-custom p-5 border-black border-2 lg:rounded-b-2xl">
+		<div class="flex justify-between items-center bg-[#ca9465] text-[#55362a] md:text-base lg:text-xl font-custom p-5">
 
 			<!-- Navigation bar home -->
 			<h1 class="lg:hidden text-3xl italic">JM</h1>
@@ -57,6 +57,8 @@
 </header>
 
 <main>
+	<!-- To the top button -->
+	<button class="bg-white bg-opacity-30 invert rounded-full p-2 md:p-3 fixed bottom-5 right-5 md:bottom-10 md:right-20 z-10 hover:scale-110"><a href="#landing-page"><img class="w-10" src="website-images/up-arrow.svg" alt="top-button"></a></button>
 
 	<!-- opening view -->
 	<section class="flex justify-center items-center gap-28 bg-[url('website-images/professional-pic-big.jpeg')] lg:bg-none bg-cover
@@ -77,16 +79,16 @@
 
 		<!-- opening image -->
 		<div>
-			<img class="hidden lg:flex h-[40rem] border-black border-2 rounded-lg lg:shadow-[35px_35px_0_0_black] hover:lg:shadow-[35px_35px_0_0_white] hover:scale-105 ease-in duration-300"
+			<img class="hidden lg:flex max-h-full border-black border-2 rounded-lg lg:shadow-[35px_35px_0_0_black] hover:lg:shadow-[35px_35px_0_0_white] hover:scale-105 ease-in duration-300"
 				 src="website-images/professional-pic-big.jpeg" alt="picture of me">
 		</div>
 	</section>
 
-	<!-- scroll effect -->
-	<section id="scroll-effect">
+	<!-- highlight effect -->
+	<section>
 
-		<!-- scroll effect text -->
-		<div class="bg-black font-custom text-center p-10 md:p-40 mt-32 lg:mt-56 text-gray-900 hover:text-white ease-in duration-300">
+		<!-- highlight effect text -->
+		<div class="bg-black font-custom text-center p-10 md:p-40 mt-32 lg:mt-56 text-gray-300 lg:text-gray-900 hover:text-white ease-in duration-300">
 			<h2 class="text-4xl md:text-6xl lg:text-8xl pb-10">Who Is Joe?</h2>
 			<p class="text-base md:text-2xl lg:text-4xl font-serif lg:px-42">
 				Highly motivated full-stack web developer with strong business acumen. Committed to continuous learning,
@@ -96,14 +98,14 @@
 	</section>
 
 	<!-- About Me -->
-	<section class="mt-32 lg:mt-48 font-custom text-[#55362a] px-5 md:px-40 lg:px-72" id="about-me">
+	<section class="mt-32 lg:mt-48 font-custom text-[#55362a] px-12 md:px-40 lg:px-72" id="about-me">
 
 		<h2 class="text-3xl md:text-4xl lg:text-7xl text-center underline tracking-wider pb-8">About Me</h2>
 
-        <!-- About me image -->
+		<!-- About me image -->
 		<div class="">
 			<img class="border-black border-2 rounded-lg w-full" src="website-images/dacd1c01-25a9-4bf3-b7b5-d360aeee78e9.jpeg"
-				  alt="another picture of me">
+				 alt="another picture of me">
 		</div>
 
 		<!-- About me text -->
@@ -130,21 +132,21 @@
 	</section>
 
 	<!-- Experience -->
-	<section class="bg-[#94c1e0] text-white p-20 mt-32 lg:mt-48" id="experience">
+	<section class="bg-[#9BBBD9] text-[#55362a] p-20 mt-32 lg:mt-48" id="experience">
 		<h2 class="text-center text-3xl md:text-4xl lg:text-7xl font-custom">EXPERIENCE</h2>
-		<div class="block lg:flex justify-evenly items-center">
+		<div class="block lg:flex justify-center gap-16 pt-20">
 
 			<!-- Coding knowledge -->
-			<div class="pt-20 ms-12 md:ms-24 lg:ms-0">
-				<h3 class="text-lg md:text-2xl lg:text-4xl font-custom underline">TECHNOLOGIES I'VE WORKED WITH:</h3>
+			<div>
+				<h3 class="text-sm md:text-lg lg:text-2xl font-custom underline">TECHNOLOGIES I'VE WORKED WITH:</h3>
 
 				<!-- Software Icons -->
-				<div class="grid items-center place-self-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5 *:m-5 md:*:grayscale-[95%]">
+				<div class="grid items-center justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5 *:m-5 md:*:grayscale-[95%]">
 					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript Icon">
 					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3 Icon">
 					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML Icon">
 					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React Icon">
-					<img class="w-32 h-32 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="Tailwind Icon">
+					<img class="w-25 h-25 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="Tailwind Icon">
 					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL Icon">
 					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" alt="Docker Icon">
 					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git Icon">
@@ -156,26 +158,26 @@
 			</div>
 
 			<!-- School knowledge -->
-			<div class="ms-12 md:ms-24 lg:ms-0">
-				<h3 class="text-lg md:text-2xl lg:text-4xl font-custom underline">EDUCATION:</h3>
-				<div class="font-serif *:font-bold *:p-5 *:block lg:*:flex *:gap-8 *:items-center">
+			<div>
+				<h3 class="text-sm md:text-lg lg:text-2xl font-custom underline">EDUCATION:</h3>
+				<div class="font-serif *:font-bold *:block lg:*:flex *:gap-8 *:items-center *:p-5">
 
 					<!-- Bootcamp Cert -->
-					<div>
+					<div class="border-b-2 border-b-black">
 						<img class="h-20 hover:filter-none" src="website-images/deep-dive-site-logo.webp" alt="CNM logo">
-						<p>Deep Dive Fullstack Coding Bootcamp<br><br>January 2024 - March 2024</p>
+						<p>Deep Dive Fullstack Coding Bootcamp<br>January 2024 - March 2024</p>
 					</div>
 
 					<!-- Degree 1 -->
-					<div>
+					<div class="border-b-2 border-b-black">
 						<img class="h-20 hover:filter-none" src="website-images/cnm-logo.png" alt="CNM logo">
-						<p>Associate's of Applied Science in Business Administration<br><br>August 2021 - April 2023</p>
+						<p>Associate's of Applied Science in Business Administration<br>August 2021 - April 2023</p>
 					</div>
 
 					<!-- Degree 2 -->
 					<div>
 						<img class="h-20 hover:filter-none" src="website-images/cnm-logo.png" alt="CNM logo">
-						<p>Associate's of Arts in Business<br><br>April 2023 - December 2023</p>
+						<p>Associate's of Arts in Business<br>April 2023 - December 2023</p>
 					</div>
 				</div>
 			</div>
@@ -231,52 +233,52 @@
 	<!-- Contact -->
 	<section id="contact" class="flex justify-center items-center font-custom text-[#332211] mt-56">
 		<div class="block md:flex justify-center items-center gap-16">
-		<form class="inline-block *:mb-8">
+			<form class="inline-block *:mb-8">
 
-			<!-- Contact name input -->
-			<div class="*:block">
-				<label for="full-name">Full Name:</label>
-				<input type="text" name="full-name" id="full-name" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full" required>
+				<!-- Contact name input -->
+				<div class="*:block">
+					<label for="full-name">Full Name:</label>
+					<input type="text" name="full-name" id="full-name" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full" required>
+				</div>
+
+				<!-- Contact email input -->
+				<div class="*:block">
+					<label for="email-box">Email:</label>
+					<input type="email" name="email-box" id="email-box" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full" required>
+				</div>
+
+				<!-- Contact message input -->
+				<div class="*:block">
+					<label for="message-box">Message:</label>
+					<textarea name="message-box" id="message-box" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full h-28 overflow-hidden" required maxlength="500"></textarea>
+				</div>
+
+				<!-- Contact buttons -->
+				<div class="flex justify-center gap-8 *:w-28 *:cursor-pointer">
+					<input type="submit" value="Let's Talk!" class="bg-black text-white rounded-lg p-2 hover:opacity-85 hover:scale-105">
+					<input type="reset" value="Reset" class="bg-black text-white rounded-lg p-2 hover:opacity-85 hover:scale-95">
+				</div>
+			</form>
+
+			<!-- Contact links -->
+			<div class="text-4xl *:mb-5">
+
+				<!-- Contact link text -->
+				<h2 class="text-4xl">Email</h2>
+				<p class="text-xl font-serif hover:underline"><a href="mailto:josephmarchbanks599@gmail.com">josephmarchbanks599@gmail.com</a></p>
+				<h2 class="text-4xl">Based In</h2>
+				<p class="text-xl font-serif">Albuquerque, NM</p>
+
+				<!-- Contact link icons -->
+				<div class="flex gap-8 mt-10">
+					<a href="https://www.linkedin.com/in/joseph-marchbanks-508a362a4/" target="_blank">
+						<img src="website-images/linkedin.svg" alt="LinkedIn Icon" class="w-14 hover:scale-105 hover:invert">
+					</a>
+					<a href="https://github.com/JPHMarchB" target="_blank">
+						<img src="website-images/github.svg" alt="GitHub Icon" class="w-14 hover:scale-105 hover:invert">
+					</a>
+				</div>
 			</div>
-
-			<!-- Contact email input -->
-			<div class="*:block">
-				<label for="email-box">Email:</label>
-				<input type="email" name="email-box" id="email-box" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full" required>
-			</div>
-
-			<!-- Contact message input -->
-			<div class="*:block">
-				<label for="message-box">Message:</label>
-				<textarea name="message-box" id="message-box" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full h-28 overflow-hidden" required maxlength="500"></textarea>
-			</div>
-
-			<!-- Contact buttons -->
-			<div class="flex justify-center gap-8 *:w-28 *:cursor-pointer">
-				<input type="submit" value="Let's Talk!" class="bg-black text-white rounded-lg p-2 hover:opacity-85 hover:scale-105">
-				<input type="reset" value="Reset" class="bg-black text-white rounded-lg p-2 hover:opacity-85 hover:scale-95">
-			</div>
-		</form>
-
-		<!-- Contact links -->
-		<div class="text-4xl *:mb-5">
-
-			<!-- Contact link text -->
-			<h2 class="text-4xl">Contact</h2>
-			<p class="text-xl font-serif hover:underline"><a href="mailto:josephmarchbanks599@gmail.com">josephmarchbanks599@gmail.com</a></p>
-			<h2 class="text-4xl">Based In</h2>
-			<p class="text-xl font-serif">Albuquerque, NM</p>
-
-			<!-- Contact link icons -->
-			<div class="flex gap-8 mt-10">
-				<a href="https://www.linkedin.com/in/joseph-marchbanks-508a362a4/" target="_blank">
-					<img src="website-images/linkedin.svg" alt="LinkedIn Icon" class="w-14 hover:scale-105 hover:invert">
-				</a>
-				<a href="https://github.com/JPHMarchB" target="_blank">
-					<img src="website-images/github.svg" alt="GitHub Icon" class="w-14 hover:scale-105 hover:invert">
-				</a>
-			</div>
-		</div>
 		</div>
 	</section>
 </main>
@@ -291,7 +293,7 @@
 				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
 				<li class="hover:text-[#ded5b9]"><a href="#resume">Resume</a></li>
 				<li class="hover:text-[#ded5b9]"><a href="#contact">Contact</a></li>
-		</ul>
+			</ul>
 		</div>
 		<div class="flex justify-center items-center gap-8 mt-5">
 			<a href="https://www.linkedin.com/in/joseph-marchbanks-508a362a4/" target="_blank">
