@@ -3,11 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Portfolio website for Joseph Marchbanks">
+	<meta name="theme-color" content="#d9b99b">
 	<link href="./output.css" rel="stylesheet">
 	<title>Joseph's Portfolio Website</title>
 </head>
-<body class="bg-[#d9b99b] forest">
+<body class="bg-[#d9b99b]">
 
 <header>
 
@@ -31,8 +33,9 @@
 							</summary>
 							<ul class="bg-base-300 italic p-2 rounded-t-none">
 								<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>
+								<li class="hover:text-[#ded5b9]"><a href="#experience">Experience</a></li>
 								<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
-								<li class="hover:text-[#ded5b9]"><a>Resume</a></li>
+								<li class="hover:text-[#ded5b9]"><a href="#resume">Resume</a></li>
 								<li class="hover:text-[#ded5b9]"><a href="#contact">Contact</a></li>
 							</ul>
 						</details>
@@ -43,8 +46,9 @@
 			<!-- Navigation bar links -->
 			<ul class="hidden lg:flex gap-8 italic pe-14">
 				<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>
+				<li class="hover:text-[#ded5b9]"><a href="#experience">Experience</a></li>
 				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
-				<li class="hover:text-[#ded5b9]"><a>Resume</a></li>
+				<li class="hover:text-[#ded5b9]"><a href="#resume">Resume</a></li>
 				<li class="border-2 border-black text-white bg-black w-28 text-center rounded-lg hover:scale-125 drop-shadow-lg hover:invert ease-in duration-300">
 					<a href="#contact">Contact</a></li>
 			</ul>
@@ -92,7 +96,9 @@
 	</section>
 
 	<!-- About Me -->
-	<section class="mt-32 lg:mt-48 font-custom text-[#55362a] px-5 md:px-40 lg:px-52" id="about-me">
+	<section class="mt-32 lg:mt-48 font-custom text-[#55362a] px-5 md:px-40 lg:px-72" id="about-me">
+
+		<h2 class="text-3xl md:text-4xl lg:text-7xl text-center underline tracking-wider pb-8">About Me</h2>
 
         <!-- About me image -->
 		<div class="">
@@ -102,7 +108,6 @@
 
 		<!-- About me text -->
 		<div class="mt-10">
-			<h2 class="text-3xl md:text-6xl lg:text-8xl underline tracking-wider pb-4">About Me</h2>
 			<p class="text-sm md:text-base lg:text-xl tracking-wider font-bold font-serif">
 				Hey there! I'm Joseph, a passionate Javascript web developer with a knack for crafting fun
 				digital experiences. Born and raised in the land of enchantment, New Mexico, I've
@@ -124,37 +129,102 @@
 		</div>
 	</section>
 
-	<!-- Projects -->
-	<section class="font-custom text-[#332211] border-b-black border-b-4 mt-32 lg:mt-56 *:mb-32" id="projects">
-		<h2 class="text-center text-4xl md:text-9xl hover:underline">MY WORKS</h2>
+	<!-- Experience -->
+	<section class="bg-[#94c1e0] text-white p-20 mt-32 lg:mt-48" id="experience">
+		<h2 class="text-center text-3xl md:text-4xl lg:text-7xl font-custom">EXPERIENCE</h2>
+		<div class="block lg:flex justify-evenly items-center">
 
-		<!-- Project display 1 -->
+			<!-- Coding knowledge -->
+			<div class="pt-20 ms-12 md:ms-24 lg:ms-0">
+				<h3 class="text-lg md:text-2xl lg:text-4xl font-custom underline">TECHNOLOGIES I'VE WORKED WITH:</h3>
+
+				<!-- Software Icons -->
+				<div class="grid items-center place-self-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5 *:m-5 md:*:grayscale-[95%]">
+					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript Icon">
+					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3 Icon">
+					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML Icon">
+					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React Icon">
+					<img class="w-32 h-32 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="Tailwind Icon">
+					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL Icon">
+					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" alt="Docker Icon">
+					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git Icon">
+					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js Icon">
+					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" alt="Express Icon">
+					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js Icon">
+					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma Icon">
+				</div>
+			</div>
+
+			<!-- School knowledge -->
+			<div class="ms-12 md:ms-24 lg:ms-0">
+				<h3 class="text-lg md:text-2xl lg:text-4xl font-custom underline">EDUCATION:</h3>
+				<div class="font-serif *:font-bold *:p-5 *:block lg:*:flex *:gap-8 *:items-center">
+
+					<!-- Bootcamp Cert -->
+					<div>
+						<img class="h-20 hover:filter-none" src="website-images/deep-dive-site-logo.webp" alt="CNM logo">
+						<p>Deep Dive Fullstack Coding Bootcamp<br><br>January 2024 - March 2024</p>
+					</div>
+
+					<!-- Degree 1 -->
+					<div>
+						<img class="h-20 hover:filter-none" src="website-images/cnm-logo.png" alt="CNM logo">
+						<p>Associate's of Applied Science in Business Administration<br><br>August 2021 - April 2023</p>
+					</div>
+
+					<!-- Degree 2 -->
+					<div>
+						<img class="h-20 hover:filter-none" src="website-images/cnm-logo.png" alt="CNM logo">
+						<p>Associate's of Arts in Business<br><br>April 2023 - December 2023</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects -->
+	<section class="font-custom text-[#332211] mt-32 lg:mt-56 *:mb-32" id="projects">
+		<h2 class="text-center text-3xl md:text-4xl lg:text-7xl hover:underline">MY WORKS</h2>
+
+		<!-- project display 1 -->
 		<div class="block lg:flex gap-16 text-[#55362a] md:ps-40">
 			<img src="https://fakeimg.pl/400x400" alt="project image">
 
-			<!-- Display 1 text -->
+			<!-- display 1 text -->
 			<div class="md:me-40">
-				<h2 class="text-4xl md:text-5xl lg:text-7xl pb-5">Project Title</h2>
-				<p class="text-xl md:text-2xl lg:text-4xl font-serif">Project description that gives an overview of the
-					project not too long though.</p>
+				<h2 class="text-2xl md:text-3xl lg:text-5xl pb-5">Positive News Aggregator</h2>
+				<p class="text-lg md:text-xl lg:text-2xl font-serif">PNN serves as a centralized platform for sourcing
+					and disseminating uplifting stories, acts of kindness, and noteworthy achievements from diverse
+					online outlets.<br><br>It offers users a curated selection of positive content, providing a
+					convenient and reliable resource for accessing uplifting news amidst the prevailing landscape of
+					negativity.</p>
 			</div>
 		</div>
 
-		<!-- Project display 2 -->
+		<!-- project display 2 -->
 		<div class="block lg:flex gap-16 text-[#55362a] md:ps-40">
 
 			<!-- mobile image view -->
-			<img class="block md:hidden me-40" src="https://fakeimg.pl/400x400" alt="project image">
-			<div>
+			<img class="block lg:hidden me-40" src="https://fakeimg.pl/400x400" alt="project image">
+			<div class="me-0 md:me-40 lg:me-0">
 
-				<!-- Display 2 text -->
-				<h2 class="text-4xl md:text-5xl lg:text-7xl pb-5">Project Title</h2>
-				<p class="text-xl md:text-2xl lg:text-4xl font-serif">Project description that gives an overview of the
-					project not too long though.</p>
+				<!-- display 2 text -->
+				<h2 class="text-2xl md:text-3xl lg:text-5xl pb-5">Personal Website</h2>
+				<p class="text-lg md:text-xl lg:text-2xl font-serif">My personal website is my online resume and
+					portfolio. It's where potential employers and clients can get to know me better and see what I have
+					to offer!</p>
 			</div>
 
 			<!-- desktop image view -->
-			<img class="hidden md:flex me-40" src="https://fakeimg.pl/400x400" alt="project image">
+			<img class="hidden lg:flex me-40" src="https://fakeimg.pl/400x400" alt="project image">
+		</div>
+	</section>
+
+	<!-- Resume -->
+	<section class="grid justify-center items-center bg-[url('website-images/resume-back.jpg')] bg-cover bg-fixed bg-center backdrop-blur-3xl text-white font-serif border-y-4 border-white py-28 mt-32 lg:mt-56" id="resume">
+		<h2 class="text-2xl lg:text-4xl">Give my Resume a read!</h2>
+		<div class="text-center text-2xl p-16">
+			<button class="border-4 border-white p-2 hover:scale-110"><a href="website-images/joseph-marchbanks-resume.pdf">GET A COPY</a></button>
 		</div>
 	</section>
 
@@ -215,12 +285,12 @@
 <footer>
 	<div class="bg-[#506751] font-custom text-white mt-56 p-10">
 		<div>
-			<ul class=" text-sm md:text-lg flex justify-center items-center gap-8">
+			<ul class="block md:flex justify-center items-center gap-8 text-sm text-center md:text-lg">
 				<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>
+				<li class="hover:text-[#ded5b9]"><a href="#experience">Experience</a></li>
 				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
-				<li class="hover:text-[#ded5b9]"><a>Resume</a></li>
-				<li class="hover:text-[#ded5b9]"><a
-					href="#contact">Contact</a></li>
+				<li class="hover:text-[#ded5b9]"><a href="#resume">Resume</a></li>
+				<li class="hover:text-[#ded5b9]"><a href="#contact">Contact</a></li>
 		</ul>
 		</div>
 		<div class="flex justify-center items-center gap-8 mt-5">
