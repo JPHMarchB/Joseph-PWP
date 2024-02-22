@@ -1300,6 +1300,11 @@ html{
   margin-right: auto;
 }
 
+.my-32{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 .me-0{
   margin-inline-end: 0px;
 }
@@ -1563,6 +1568,21 @@ html{
   padding-bottom: 7rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1583,12 +1603,12 @@ html{
   padding-inline-start: 5rem;
 }
 
-.pt-20{
-  padding-top: 5rem;
-}
-
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
 }
 
 .text-center{
@@ -1715,6 +1735,10 @@ html{
   margin: 1.25rem;
 }
 
+.\*\:m-10 > *{
+  margin: 2.5rem;
+}
+
 .\*\:mb-32 > *{
   margin-bottom: 8rem;
 }
@@ -1749,6 +1773,19 @@ html{
 
 .\*\:p-5 > *{
   padding: 1.25rem;
+}
+
+.\*\:p-10 > *{
+  padding: 2.5rem;
+}
+
+.\*\:p-0 > *{
+  padding: 0px;
+}
+
+.\*\:py-5 > *{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .\*\:pb-7 > *{
@@ -1908,13 +1945,17 @@ html{
     line-height: 1.75rem;
   }
 
-  .md\:\*\:grayscale-\[95\%\] > *{
-    --tw-grayscale: grayscale(95%);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  .md\:\*\:p-10 > *{
+    padding: 2.5rem;
   }
 }
 
 @media (min-width: 1024px){
+  .lg\:my-48{
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
+
   .lg\:me-0{
     margin-inline-end: 0px;
   }
@@ -1925,10 +1966,6 @@ html{
 
   .lg\:mt-56{
     margin-top: 14rem;
-  }
-
-  .lg\:mt-0{
-    margin-top: 0px;
   }
 
   .lg\:flex{
@@ -1958,6 +1995,16 @@ html{
   .lg\:px-72{
     padding-left: 18rem;
     padding-right: 18rem;
+  }
+
+  .lg\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .lg\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .lg\:pt-0{
