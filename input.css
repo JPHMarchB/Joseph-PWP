@@ -8,4 +8,7 @@
     .font-outline {
         -webkit-text-stroke: 2px white;
     }
+    .pointer-events-none {
+        pointer-events: none;
+    }
 }

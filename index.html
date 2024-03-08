@@ -11,7 +11,7 @@
 </head>
 <body class="bg-[#d9b99b]">
 
-<header>
+<header id="top">
 
 	<!-- Navigation bar -->
 	<nav class="mx-auto">
@@ -21,7 +21,7 @@
 
 			<!-- Navigation bar home -->
 			<h1 class="lg:hidden text-3xl italic">JM</h1>
-			<h1 class="hidden lg:contents italic ps-20 hover:text-black hover:underline"><a href="#landing-page">Joseph Marchbanks</a></h1>
+			<h1 class="hidden lg:contents italic ps-20 hover:text-black hover:underline"><a href="#top">Joseph Marchbanks</a></h1>
 
 			<!-- Hamburger-drop-down -->
 			<div class="flex-none">
@@ -58,7 +58,7 @@
 
 <main>
 	<!-- To the top button -->
-	<button class="bg-white bg-opacity-30 invert rounded-full p-2 md:p-3 fixed bottom-5 right-5 md:bottom-10 md:right-20 z-10 hover:scale-110"><a href="#landing-page"><img class="w-10" src="website-images/up-arrow.svg" alt="top-button"></a></button>
+	<button class="bg-white bg-opacity-30 invert rounded-full p-2 md:p-3 fixed bottom-5 right-5 md:bottom-10 md:right-20 z-10 hover:scale-110"><a href="#top"><img class="w-10" src="website-images/up-arrow.svg" alt="top-button"></a></button>
 
 	<!-- opening view -->
 	<section class="flex justify-center items-center gap-28 bg-[url('website-images/professional-pic-big.jpeg')] lg:bg-none bg-cover
@@ -79,7 +79,7 @@
 
 		<!-- opening image -->
 		<div>
-			<img class="hidden lg:flex max-h-full border-black border-2 rounded-lg lg:shadow-[35px_35px_0_0_black] hover:lg:shadow-[35px_35px_0_0_white] hover:scale-105 ease-in duration-300"
+			<img class="hidden lg:flex border-black border-2 rounded-lg lg:shadow-[35px_35px_0_0_black] hover:lg:shadow-[35px_35px_0_0_white] hover:scale-105 ease-in duration-300"
 				 src="website-images/professional-pic-big.jpeg" alt="picture of me">
 		</div>
 	</section>
@@ -189,47 +189,83 @@
 		<h2 class="text-center text-3xl md:text-4xl lg:text-7xl hover:underline">MY WORKS</h2>
 
 		<!-- project display 1 -->
-		<div class="text-gray-200 glass bg-[#001861] p-10 rounded-lg">
+		<div class="text-gray-100 glass bg-[#001861] p-10 rounded-lg md:shadow-black md:shadow-2xl">
 			<img class="rounded-lg w-full" src="website-images/city-search.png" alt="project image">
 
 			<!-- display 1 text -->
-			<div class="pt-10 lg:pt-0">
+			<div class="pt-10 lg:pt-5">
 				<h2 class="text-2xl md:text-3xl lg:text-5xl pb-5">Positive News Aggregator</h2>
 				<p class="text-lg md:text-xl lg:text-2xl font-serif">PNN serves as a centralized platform for sourcing
 					and disseminating uplifting stories, acts of kindness, and noteworthy achievements from diverse
 					online outlets. It provides a convenient and reliable resource for accessing uplifting news amidst the prevailing landscape of negativity.</p>
+
+				<!-- Technologies used -->
+				<div class="flex flex-wrap gap-4 pt-4 font-serif text-sm text-gray-300 *:underline">
+					<p>React</p>
+					<p>Tailwind</p>
+					<p>Next.js</p>
+					<p>HTML</p>
+					<p>Node</p>
+					<p>Express</p>
+					<p>PostgreSQL</p>
+					<p>Docker</p>
+					<p>Git</p>
+				</div>
+
+				<!-- Visit Website -->
+				<button class="bg-blue-800 p-3 mt-4 rounded-lg hover:scale-95"><a href="https://github.com/Joedon-Owen-Joseph-Capstone/positive-news-capstone" target="_blank">Visit Site!</a></button>
 			</div>
 		</div>
 
 		<!-- project display 2 -->
-		<div class="text-gray-200 glass bg-[#3333FF] p-10 rounded-lg">
+		<div class="text-gray-100 glass bg-[#3333FF] p-10 rounded-lg md:shadow-black md:shadow-2xl">
 			<img class="rounded-lg w-full" src="website-images/city-search.png" alt="project image">
-			<div class="pt-10 lg:pt-0">
 
-				<!-- display 2 text -->
+			<!-- display 2 text -->
+			<div class="pt-10 lg:pt-5">
 				<h2 class="text-2xl md:text-3xl lg:text-5xl pb-5">Weather App</h2>
 				<p class="text-lg md:text-xl lg:text-2xl font-serif">A simple weather app. This application provides
 					real-time weather updates and forecasts for cities around the world. Pull data about wind speed, humidity and temperature from any city of your choice!</p>
 			</div>
+
+			<!-- Technologies used -->
+			<div class="flex flex-wrap gap-4 pt-4 font-serif text-sm text-gray-300 *:underline">
+				<p>JavaScript</p>
+				<p>CSS3</p>
+				<p>HTML5</p>
+			</div>
+
+			<!-- Visit Website -->
+			<button class="bg-blue-800 p-3 mt-4 rounded-lg hover:scale-95"><a href="https://github.com/JPHMarchB/weather-app" target="_blank">Visit Repo!</a></button>
 		</div>
 
 		<!-- project display 3 -->
-		<div class="text-gray-200 glass bg-[#5D3FD3] p-10 rounded-lg">
+		<div class="text-gray-100 glass bg-[#6A5ACD] p-10 rounded-lg md:shadow-black md:shadow-2xl">
 			<img class="rounded-lg w-full" src="website-images/city-search.png" alt="project image">
 
 			<!-- display 3 text -->
-			<div class="pt-10 lg:pt-0">
+			<div class="pt-10 lg:pt-5">
 				<h2 class="text-2xl md:text-3xl lg:text-5xl pb-5">JavaScript Analogue Clock</h2>
 				<p class="text-lg md:text-xl lg:text-2xl font-serif">A unique analogue clock that utilizes javascript for swift and smooth hand movements to display the current time, with an appealing interface created using CSS and HTML.</p>
 			</div>
+
+			<!-- Technologies used -->
+			<div class="flex flex-wrap gap-4 pt-4 font-serif text-sm text-gray-300 *:underline">
+				<p>JavaScript</p>
+				<p>CSS3</p>
+				<p>HTML5</p>
+			</div>
+
+			<!-- Visit Website -->
+			<button class="bg-blue-800 p-3 mt-4 rounded-lg hover:scale-95"><a href="" target="_blank">Visit Repo!</a></button>
 		</div>
 	</section>
 
 	<!-- Resume -->
-	<section class="grid justify-center items-center bg-[url('website-images/resume-back.jpg')] bg-cover bg-fixed bg-center backdrop-blur-3xl text-white font-serif border-y-4 border-white py-28 mt-32 lg:mt-56" id="resume">
+	<section class="grid justify-center items-center bg-[url('website-images/resume-back.jpg')] bg-cover bg-fixed bg-center backdrop-blur-3xl text-white font-serif border-y-4 border-white py-36 mt-32 lg:mt-56" id="resume">
 		<h2 class="text-2xl lg:text-4xl">Give my Resume a read!</h2>
-		<div class="text-center text-2xl p-16">
-			<button class="border-4 border-white p-2 hover:scale-110"><a href="website-images/joseph-marchbanks-resume.pdf">GET A COPY</a></button>
+		<div class="text-center text-2xl pt-10">
+			<button class="border-4 border-white p-2 hover:scale-110"><a href="website-images/portfolio-resume-jmarch.pdf">GET A COPY</a></button>
 		</div>
 	</section>
 
@@ -309,5 +345,9 @@
 	</div>
 </footer>
 
+<!-- Mouse follower -->
+<div class="hidden lg:block p-5 pointer-events-none border-2 border-white rounded-full absolute z-50 transform -translate-x-1/2 -translate-y-1/3" id="follower"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
