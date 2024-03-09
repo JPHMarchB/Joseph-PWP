@@ -1435,10 +1435,6 @@ html{
   height: 7rem;
 }
 
-.max-h-full{
-  max-height: 100%;
-}
-
 .w-10{
   width: 2.5rem;
 }
@@ -1683,11 +1679,6 @@ html{
   padding-bottom: 5rem;
 }
 
-.py-28{
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
 .py-36{
   padding-top: 9rem;
   padding-bottom: 9rem;
@@ -1723,10 +1714,6 @@ html{
 
 .pt-4{
   padding-top: 1rem;
-}
-
-.pt-6{
-  padding-top: 1.5rem;
 }
 
 .text-center{
