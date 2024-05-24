@@ -12,338 +12,311 @@
 </head>
 <body class="bg-[#d9b99b]">
 
-<header id="top">
-
-	<!-- Navigation bar -->
-	<nav class="mx-auto">
-
-		<!-- Navigation content -->
-		<div class="flex justify-between items-center bg-[#ca9465] text-[#55362a] md:text-base lg:text-xl font-custom p-5 md:p-10">
-
-			<!-- Navigation bar home -->
-			<h1 class="lg:hidden text-3xl italic">JM</h1>
-			<h1 class="hidden lg:contents italic ps-20 hover:text-black hover:underline"><a href="#top">Joseph Marchbanks</a></h1>
-
-			<!-- Hamburger-drop-down -->
-			<div class="flex-none">
-				<ul class="menu menu-horizontal me-4">
-					<li>
-						<details>
-							<summary class="lg:hidden text-3xl focus:outline-2 cursor-pointer">
-								&#9776;
-							</summary>
-							<ul class="bg-white italic rounded-t-none">
-								<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>
-								<li class="hover:text-[#ded5b9]"><a href="#experience">Experience</a></li>
-								<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
-								<li class="hover:text-[#ded5b9]"><a href="#resume">Resume</a></li>
-								<li class="hover:text-[#ded5b9]"><a href="#contact">Contact</a></li>
-							</ul>
-						</details>
-					</li>
-				</ul>
-			</div>
-
-			<!-- Navigation bar links -->
-			<ul class="hidden lg:flex gap-8 italic pe-14">
-				<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>
-				<li class="hover:text-[#ded5b9]"><a href="#experience">Experience</a></li>
-				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
-				<li class="hover:text-[#ded5b9]"><a href="#resume">Resume</a></li>
-				<li class="border-2 border-black text-white bg-black w-28 text-center rounded-lg hover:scale-125 drop-shadow-lg hover:invert ease-in duration-300">
-					<a href="#contact">Contact</a></li>
-			</ul>
+<header id="top" class="">
+	<nav class="flex justify-between absolute top-0 z-50 p-6">
+		<div>
+			<h1 class="text-white hidden lg:block">Joseph Marchbanks</h1>
+			<h2 class="block lg:hidden">JM</h2>
 		</div>
 	</nav>
 </header>
 
-<main>
+<main class="relative">
+	<!-- component -->
+	<section class="sticky top-0 h-screen flex flex-col items-center justify-center bg-[url('website-images/resume-back.jpg')] bg-center bg-fixed bg-cover">
+		<h2 class="text-4xl text-white">The First Title</h2>
+		<p>Scroll Down</p>
+	</section>
+	<section class="sticky top-0 h-screen flex flex-col items-center justify-center bg-indigo-600 text-white">
+		<h2 class="text-4xl">The Second Title</h2>
+		<p>Scroll Down</p>
+	</section>
 	<!-- To the top button -->
-	<button class="bg-white bg-opacity-30 invert rounded-full p-2 md:p-3 fixed bottom-5 right-5 md:bottom-10 md:right-20 z-10 hover:scale-110"><a href="#top"><img class="w-10" src="website-images/up-arrow.svg" alt="top-button"></a></button>
+	<!--	<button class="bg-white bg-opacity-30 invert rounded-full p-2 md:p-3 fixed bottom-5 right-5 md:bottom-10 md:right-20 z-10 hover:scale-110"><a href="#top"><img class="w-10" src="website-images/up-arrow.svg" alt="top-button"></a></button>-->
 
-	<!-- opening view -->
-	<section class="flex justify-center items-center gap-28 bg-[url('website-images/professional-pic-big.jpeg')] lg:bg-none bg-cover
-	text-white lg:text-[#55362a] font-custom p-24 border-y-4 border-black lg:border-none" id="landing-page">
+	<!--	&lt;!&ndash; opening view &ndash;&gt;-->
+	<!--	<section class="flex justify-center items-center gap-28 bg-[url('website-images/professional-pic-big.jpeg')] lg:bg-none bg-cover-->
+	<!--	text-white lg:text-[#55362a] font-custom p-24 border-y-4 border-black lg:border-none" id="landing-page">-->
 
-		<!-- opening text -->
-		<div class="*:pb-7 *:ease-in *:duration-300">
-			<h1 class="text-4xl md:text-6xl lg:text-9xl tracking-widest hover:scale-105 hover:font-outline hover:text-transparent">
-				Hi,<br>I'm<br>Joe.
-			</h1>
-			<h2 class="text-xl md:text-3xl lg:text-5xl underline hover:scale-105 hover:font-outline hover:text-transparent">
-				Javascript Web Developer
-			</h2>
-			<h3 class="text-lg md:text-2xl lg:text-3xl hover:scale-105 hover:font-outline hover:text-transparent">
-				Albuquerque, NM
-			</h3>
-		</div>
+	<!--		&lt;!&ndash; opening text &ndash;&gt;-->
+	<!--		<div class="*:pb-7 *:ease-in *:duration-300">-->
+	<!--			<h1 class="text-4xl md:text-6xl lg:text-9xl tracking-widest hover:scale-105 hover:font-outline hover:text-transparent">-->
+	<!--				Hi,<br>I'm<br>Joe.-->
+	<!--			</h1>-->
+	<!--			<h2 class="text-xl md:text-3xl lg:text-5xl underline hover:scale-105 hover:font-outline hover:text-transparent">-->
+	<!--				Javascript Web Developer-->
+	<!--			</h2>-->
+	<!--			<h3 class="text-lg md:text-2xl lg:text-3xl hover:scale-105 hover:font-outline hover:text-transparent">-->
+	<!--				Albuquerque, NM-->
+	<!--			</h3>-->
+	<!--		</div>-->
 
-		<!-- opening image -->
-		<div>
-			<img class="hidden lg:flex border-black border-2 rounded-lg lg:shadow-[35px_35px_0_0_black] hover:lg:shadow-[35px_35px_0_0_white] hover:scale-105 ease-in duration-300"
-				 src="website-images/professional-pic-big.jpeg" alt="picture of me">
-		</div>
-	</section>
+	<!--		&lt;!&ndash; opening image &ndash;&gt;-->
+	<!--		<div>-->
+	<!--			<img class="hidden lg:flex border-black border-2 rounded-lg lg:shadow-[35px_35px_0_0_black] hover:lg:shadow-[35px_35px_0_0_white] hover:scale-105 ease-in duration-300"-->
+	<!--				 src="website-images/professional-pic-big.jpeg" alt="picture of me">-->
+	<!--		</div>-->
+	<!--	</section>-->
 
-	<!-- highlight effect -->
-	<section>
+	<!--	&lt;!&ndash; highlight effect &ndash;&gt;-->
+	<!--	<section>-->
 
-		<!-- highlight effect text -->
-		<div class="bg-black font-custom text-center p-10 md:p-40 py-20 mt-32 lg:mt-56 text-gray-300 lg:text-gray-900 hover:text-white ease-in duration-300">
-			<h2 class="text-4xl md:text-6xl lg:text-8xl pb-10">Who Is Joe?</h2>
-			<p class="text-base md:text-2xl lg:text-4xl font-serif lg:px-42">
-				Highly motivated full-stack web developer with strong business acumen. Committed to continuous learning,
-				adept at working independently or collaboratively. Leveraging unique skills to deliver impactful results.
-			</p>
-		</div>
-	</section>
+	<!--		&lt;!&ndash; highlight effect text &ndash;&gt;-->
+	<!--		<div class="bg-black font-custom text-center p-10 md:p-40 py-20 mt-32 lg:mt-56 text-gray-300 lg:text-gray-900 hover:text-white ease-in duration-300">-->
+	<!--			<h2 class="text-4xl md:text-6xl lg:text-8xl pb-10">Who Is Joe?</h2>-->
+	<!--			<p class="text-base md:text-2xl lg:text-4xl font-serif lg:px-42">-->
+	<!--				Highly motivated full-stack web developer with strong business acumen. Committed to continuous learning,-->
+	<!--				adept at working independently or collaboratively. Leveraging unique skills to deliver impactful results.-->
+	<!--			</p>-->
+	<!--		</div>-->
+	<!--	</section>-->
 
-	<!-- About Me -->
-	<section class="mt-32 lg:mt-48 font-custom text-[#55362a] px-6 md:px-32 lg:px-56" id="about-me">
+	<!--	&lt;!&ndash; About Me &ndash;&gt;-->
+	<!--	<section class="mt-32 lg:mt-48 font-custom text-[#55362a] px-6 md:px-32 lg:px-56" id="about-me">-->
 
-		<h2 class="text-3xl md:text-4xl lg:text-7xl text-center underline tracking-wider pb-8">About Me</h2>
+	<!--		<h2 class="text-3xl md:text-4xl lg:text-7xl text-center underline tracking-wider pb-8">About Me</h2>-->
 
-		<!-- About me image -->
-		<div>
-			<img class="rounded-lg w-full" src="website-images/about-image-pwp.jpg"
-				 alt="another picture of me">
-		</div>
+	<!--		&lt;!&ndash; About me image &ndash;&gt;-->
+	<!--		<div>-->
+	<!--			<img class="rounded-lg w-full" src="website-images/about-image-pwp.jpg"-->
+	<!--				 alt="another picture of me">-->
+	<!--		</div>-->
 
-		<!-- About me text -->
-		<div class="mt-10">
-			<p class="text-sm md:text-base lg:text-xl tracking-wider font-bold font-serif">
-				Hey there! I'm Joseph, a passionate Javascript web developer with a knack for crafting fun
-				digital experiences. Born and raised in the land of enchantment, New Mexico, I've
-				always been inspired by the blend of rich culture and innovative spirit that defines my hometown.
-				<br><br>
-				I am an enthusiastic newcomer to the tech scene with a boundless curiosity and a hunger for knowledge, I
-				thrive on turning ideas into reality, whether it's building responsive front-end interfaces or architecting
-				robust back-end systems. From conceptualization to deployment, I'm committed to delivering solutions that
-				not only meet but exceed expectations.
-				<br><br>
-				Outside of coding, you can find me exploring the great outdoors,
-				or learning a new piece on the piano! I believe in the power of continuous learning and embrace every
-				opportunity to expand my skill set and stay ahead of the curve in this ever-evolving digital landscape.
-				<br><br>
-				If you're looking for a dedicated professional who combines technical expertise with a strategic mindset,
-				I'd love to connect and explore how we can bring your digital vision to life. Let's collaborate and create
-				something extraordinary together!
-			</p>
-		</div>
-	</section>
+	<!--		&lt;!&ndash; About me text &ndash;&gt;-->
+	<!--		<div class="mt-10">-->
+	<!--			<p class="text-sm md:text-base lg:text-xl tracking-wider font-bold font-serif">-->
+	<!--				Hey there! I'm Joseph, a passionate Javascript web developer with a knack for crafting fun-->
+	<!--				digital experiences. Born and raised in the land of enchantment, New Mexico, I've-->
+	<!--				always been inspired by the blend of rich culture and innovative spirit that defines my hometown.-->
+	<!--				<br><br>-->
+	<!--				I am an enthusiastic newcomer to the tech scene with a boundless curiosity and a hunger for knowledge, I-->
+	<!--				thrive on turning ideas into reality, whether it's building responsive front-end interfaces or architecting-->
+	<!--				robust back-end systems. From conceptualization to deployment, I'm committed to delivering solutions that-->
+	<!--				not only meet but exceed expectations.-->
+	<!--				<br><br>-->
+	<!--				Outside of coding, you can find me exploring the great outdoors,-->
+	<!--				or learning a new piece on the piano! I believe in the power of continuous learning and embrace every-->
+	<!--				opportunity to expand my skill set and stay ahead of the curve in this ever-evolving digital landscape.-->
+	<!--				<br><br>-->
+	<!--				If you're looking for a dedicated professional who combines technical expertise with a strategic mindset,-->
+	<!--				I'd love to connect and explore how we can bring your digital vision to life. Let's collaborate and create-->
+	<!--				something extraordinary together!-->
+	<!--			</p>-->
+	<!--		</div>-->
+	<!--	</section>-->
 
-	<!-- Experience -->
-	<section class="bg-[#596e79] text-white p-20 mt-32 lg:mt-48" id="experience">
-		<h2 class="text-center text-3xl md:text-4xl lg:text-7xl font-custom">EXPERIENCE</h2>
-		<div class="block lg:flex justify-center gap-16 pt-20">
+	<!--	&lt;!&ndash; Experience &ndash;&gt;-->
+	<!--	<section class="bg-[#596e79] text-white p-20 mt-32 lg:mt-48" id="experience">-->
+	<!--		<h2 class="text-center text-3xl md:text-4xl lg:text-7xl font-custom">EXPERIENCE</h2>-->
+	<!--		<div class="block lg:flex justify-center gap-16 pt-20">-->
 
-			<!-- Coding knowledge -->
-			<div>
-				<h3 class="text-sm md:text-lg lg:text-2xl font-custom underline">TECHNOLOGIES I'VE WORKED WITH:</h3>
+	<!--			&lt;!&ndash; Coding knowledge &ndash;&gt;-->
+	<!--			<div>-->
+	<!--				<h3 class="text-sm md:text-lg lg:text-2xl font-custom underline">TECHNOLOGIES I'VE WORKED WITH:</h3>-->
 
-				<!-- Software Icons -->
-				<div class="grid items-center justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5 *:m-10 lg:*:grayscale-[95%] *:ease-in *:duration-300">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript Icon">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3 Icon">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML Icon">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React Icon">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="Tailwind Icon">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL Icon">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" alt="Docker Icon">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git Icon">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js Icon">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" alt="Express Icon">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js Icon">
-					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma Icon">
-				</div>
-			</div>
+	<!--				&lt;!&ndash; Software Icons &ndash;&gt;-->
+	<!--				<div class="grid items-center justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5 *:m-10 lg:*:grayscale-[95%] *:ease-in *:duration-300">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript Icon">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3 Icon">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML Icon">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React Icon">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="Tailwind Icon">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL Icon">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" alt="Docker Icon">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git Icon">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js Icon">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" alt="Express Icon">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js Icon">-->
+	<!--					<img class="w-20 h-20 hover:filter-none hover:scale-110" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma Icon">-->
+	<!--				</div>-->
+	<!--			</div>-->
 
-			<!-- School knowledge -->
-			<div>
-				<h3 class="text-sm md:text-lg lg:text-2xl font-custom underline">EDUCATION:</h3>
-				<div class="font-serif *:font-bold *:block lg:*:flex *:gap-8 *:items-center *:py-5 md:*:p-10">
+	<!--			&lt;!&ndash; School knowledge &ndash;&gt;-->
+	<!--			<div>-->
+	<!--				<h3 class="text-sm md:text-lg lg:text-2xl font-custom underline">EDUCATION:</h3>-->
+	<!--				<div class="font-serif *:font-bold *:block lg:*:flex *:gap-8 *:items-center *:py-5 md:*:p-10">-->
 
-					<!-- Bootcamp Cert -->
-					<div class="border-b-2 border-b-black">
-						<img class="h-20 hover:filter-none" src="website-images/deep-dive-site-logo.webp" alt="CNM logo">
-						<p>Deep Dive Fullstack Coding Bootcamp<br>January 2024 - March 2024</p>
-					</div>
+	<!--					&lt;!&ndash; Bootcamp Cert &ndash;&gt;-->
+	<!--					<div class="border-b-2 border-b-black">-->
+	<!--						<img class="h-20 hover:filter-none" src="website-images/deep-dive-site-logo.webp" alt="CNM logo">-->
+	<!--						<p>Deep Dive Fullstack Coding Bootcamp<br>January 2024 - March 2024</p>-->
+	<!--					</div>-->
 
-					<!-- Degree 1 -->
-					<div class="border-b-2 border-b-black">
-						<img class="h-20 hover:filter-none" src="website-images/cnm-logo.png" alt="CNM logo">
-						<p>Associate's of Applied Science in Business Administration<br>August 2021 - April 2023</p>
-					</div>
+	<!--					&lt;!&ndash; Degree 1 &ndash;&gt;-->
+	<!--					<div class="border-b-2 border-b-black">-->
+	<!--						<img class="h-20 hover:filter-none" src="website-images/cnm-logo.png" alt="CNM logo">-->
+	<!--						<p>Associate's of Applied Science in Business Administration<br>August 2021 - April 2023</p>-->
+	<!--					</div>-->
 
-					<!-- Degree 2 -->
-					<div>
-						<img class="h-20 hover:filter-none" src="website-images/cnm-logo.png" alt="CNM logo">
-						<p>Associate's of Arts in Business<br>April 2023 - December 2023</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<!--					&lt;!&ndash; Degree 2 &ndash;&gt;-->
+	<!--					<div>-->
+	<!--						<img class="h-20 hover:filter-none" src="website-images/cnm-logo.png" alt="CNM logo">-->
+	<!--						<p>Associate's of Arts in Business<br>April 2023 - December 2023</p>-->
+	<!--					</div>-->
+	<!--				</div>-->
+	<!--			</div>-->
+	<!--		</div>-->
+	<!--	</section>-->
 
-	<!-- Projects -->
-	<section class="font-custom text-[#332211] p-2 md:p-8 lg:p-32 mt-32 lg:mt-56 *:mb-16" id="projects">
-		<h2 class="text-center text-3xl md:text-4xl lg:text-7xl hover:underline">MY WORKS</h2>
+	<!--	&lt;!&ndash; Projects &ndash;&gt;-->
+	<!--	<section class="font-custom text-[#332211] p-2 md:p-8 lg:p-32 mt-32 lg:mt-56 *:mb-16" id="projects">-->
+	<!--		<h2 class="text-center text-3xl md:text-4xl lg:text-7xl hover:underline">MY WORKS</h2>-->
 
-		<!-- project display 1 -->
-		<div class="text-gray-100 glass bg-[#001861] p-10 rounded-lg md:shadow-black md:shadow-2xl">
-			<img class="rounded-lg w-full" src="website-images/positive-news-pic.png" alt="project image">
+	<!--		&lt;!&ndash; project display 1 &ndash;&gt;-->
+	<!--		<div class="text-gray-100 glass bg-[#001861] p-10 rounded-lg md:shadow-black md:shadow-2xl">-->
+	<!--			<img class="rounded-lg w-full" src="website-images/positive-news-pic.png" alt="project image">-->
 
-			<!-- display 1 text -->
-			<div class="pt-10 lg:pt-5">
-				<h2 class="text-2xl md:text-3xl lg:text-5xl pb-5">Positive News Aggregator</h2>
-				<p class="text-lg md:text-xl lg:text-2xl font-serif">PNN serves as a centralized platform for sourcing
-					and disseminating uplifting stories, acts of kindness, and noteworthy achievements from diverse
-					online outlets. It provides a convenient and reliable resource for accessing uplifting news amidst the prevailing landscape of negativity.</p>
+	<!--			&lt;!&ndash; display 1 text &ndash;&gt;-->
+	<!--			<div class="pt-10 lg:pt-5">-->
+	<!--				<h2 class="text-2xl md:text-3xl lg:text-5xl pb-5">Positive News Aggregator</h2>-->
+	<!--				<p class="text-lg md:text-xl lg:text-2xl font-serif">PNN serves as a centralized platform for sourcing-->
+	<!--					and disseminating uplifting stories, acts of kindness, and noteworthy achievements from diverse-->
+	<!--					online outlets. It provides a convenient and reliable resource for accessing uplifting news amidst the prevailing landscape of negativity.</p>-->
 
-				<!-- Technologies used -->
-				<div class="flex flex-wrap gap-4 pt-4 font-serif text-sm text-gray-300 *:underline">
-					<p>React</p>
-					<p>Tailwind</p>
-					<p>Next.js</p>
-					<p>HTML</p>
-					<p>Node</p>
-					<p>Express</p>
-					<p>PostgreSQL</p>
-					<p>Docker</p>
-					<p>Git</p>
-				</div>
+	<!--				&lt;!&ndash; Technologies used &ndash;&gt;-->
+	<!--				<div class="flex flex-wrap gap-4 pt-4 font-serif text-sm text-gray-300 *:underline">-->
+	<!--					<p>React</p>-->
+	<!--					<p>Tailwind</p>-->
+	<!--					<p>Next.js</p>-->
+	<!--					<p>HTML</p>-->
+	<!--					<p>Node</p>-->
+	<!--					<p>Express</p>-->
+	<!--					<p>PostgreSQL</p>-->
+	<!--					<p>Docker</p>-->
+	<!--					<p>Git</p>-->
+	<!--				</div>-->
 
-				<!-- Visit Website -->
-				<button class="bg-blue-800 p-3 mt-4 rounded-lg hover:scale-95"><a href="https://github.com/Joedon-Owen-Joseph-Capstone/positive-news-capstone" target="_blank">Visit Site!</a></button>
-			</div>
-		</div>
+	<!--				&lt;!&ndash; Visit Website &ndash;&gt;-->
+	<!--				<button class="bg-blue-800 p-3 mt-4 rounded-lg hover:scale-95"><a href="https://github.com/Joedon-Owen-Joseph-Capstone/positive-news-capstone" target="_blank">Visit Site!</a></button>-->
+	<!--			</div>-->
+	<!--		</div>-->
 
-		<!-- project display 2 -->
-		<div class="text-gray-100 glass bg-[#3333FF] p-10 rounded-lg md:shadow-black md:shadow-2xl">
-			<img class="rounded-lg w-full" src="website-images/city-search.png" alt="project image">
+	<!--		&lt;!&ndash; project display 2 &ndash;&gt;-->
+	<!--		<div class="text-gray-100 glass bg-[#3333FF] p-10 rounded-lg md:shadow-black md:shadow-2xl">-->
+	<!--			<img class="rounded-lg w-full" src="website-images/city-search.png" alt="project image">-->
 
-			<!-- display 2 text -->
-			<div class="pt-10 lg:pt-5">
-				<h2 class="text-2xl md:text-3xl lg:text-5xl pb-5">Weather App</h2>
-				<p class="text-lg md:text-xl lg:text-2xl font-serif">A simple weather app. This application provides
-					real-time weather updates and forecasts for cities around the world. Pull data about wind speed, humidity and temperature from any city of your choice!</p>
-			</div>
+	<!--			&lt;!&ndash; display 2 text &ndash;&gt;-->
+	<!--			<div class="pt-10 lg:pt-5">-->
+	<!--				<h2 class="text-2xl md:text-3xl lg:text-5xl pb-5">Weather App</h2>-->
+	<!--				<p class="text-lg md:text-xl lg:text-2xl font-serif">A simple weather app. This application provides-->
+	<!--					real-time weather updates and forecasts for cities around the world. Pull data about wind speed, humidity and temperature from any city of your choice!</p>-->
+	<!--			</div>-->
 
-			<!-- Technologies used -->
-			<div class="flex flex-wrap gap-4 pt-4 font-serif text-sm text-gray-300 *:underline">
-				<p>JavaScript</p>
-				<p>CSS3</p>
-				<p>HTML5</p>
-			</div>
+	<!--			&lt;!&ndash; Technologies used &ndash;&gt;-->
+	<!--			<div class="flex flex-wrap gap-4 pt-4 font-serif text-sm text-gray-300 *:underline">-->
+	<!--				<p>JavaScript</p>-->
+	<!--				<p>CSS3</p>-->
+	<!--				<p>HTML5</p>-->
+	<!--			</div>-->
 
-			<!-- Visit Website -->
-			<button class="bg-blue-800 p-3 mt-4 rounded-lg hover:scale-95"><a href="https://github.com/JPHMarchB/weather-app" target="_blank">Visit Repo!</a></button>
-		</div>
+	<!--			&lt;!&ndash; Visit Website &ndash;&gt;-->
+	<!--			<button class="bg-blue-800 p-3 mt-4 rounded-lg hover:scale-95"><a href="https://github.com/JPHMarchB/weather-app" target="_blank">Visit Repo!</a></button>-->
+	<!--		</div>-->
 
-		<!-- project display 3 -->
-		<div class="text-gray-100 glass bg-[#6A5ACD] p-10 rounded-lg md:shadow-black md:shadow-2xl">
-			<img class="rounded-lg w-full" src="website-images/analogue-clock.png" alt="project image">
+	<!--		&lt;!&ndash; project display 3 &ndash;&gt;-->
+	<!--		<div class="text-gray-100 glass bg-[#6A5ACD] p-10 rounded-lg md:shadow-black md:shadow-2xl">-->
+	<!--			<img class="rounded-lg w-full" src="website-images/analogue-clock.png" alt="project image">-->
 
-			<!-- display 3 text -->
-			<div class="pt-10 lg:pt-5">
-				<h2 class="text-2xl md:text-3xl lg:text-5xl pb-5">JavaScript Analog Clock</h2>
-				<p class="text-lg md:text-xl lg:text-2xl font-serif">A unique analog clock that utilizes javascript for swift and smooth hand movements to display the current time, with an appealing interface created using CSS and HTML.</p>
-			</div>
+	<!--			&lt;!&ndash; display 3 text &ndash;&gt;-->
+	<!--			<div class="pt-10 lg:pt-5">-->
+	<!--				<h2 class="text-2xl md:text-3xl lg:text-5xl pb-5">JavaScript Analog Clock</h2>-->
+	<!--				<p class="text-lg md:text-xl lg:text-2xl font-serif">A unique analog clock that utilizes javascript for swift and smooth hand movements to display the current time, with an appealing interface created using CSS and HTML.</p>-->
+	<!--			</div>-->
 
-			<!-- Technologies used -->
-			<div class="flex flex-wrap gap-4 pt-4 font-serif text-sm text-gray-300 *:underline">
-				<p>JavaScript</p>
-				<p>CSS3</p>
-				<p>HTML5</p>
-			</div>
+	<!--			&lt;!&ndash; Technologies used &ndash;&gt;-->
+	<!--			<div class="flex flex-wrap gap-4 pt-4 font-serif text-sm text-gray-300 *:underline">-->
+	<!--				<p>JavaScript</p>-->
+	<!--				<p>CSS3</p>-->
+	<!--				<p>HTML5</p>-->
+	<!--			</div>-->
 
-			<!-- Visit Website -->
-			<button class="bg-blue-800 p-3 mt-4 rounded-lg hover:scale-95"><a href="https://github.com/JPHMarchB/analog-clock" target="_blank">Visit Repo!</a></button>
-		</div>
-	</section>
+	<!--			&lt;!&ndash; Visit Website &ndash;&gt;-->
+	<!--			<button class="bg-blue-800 p-3 mt-4 rounded-lg hover:scale-95"><a href="https://github.com/JPHMarchB/analog-clock" target="_blank">Visit Repo!</a></button>-->
+	<!--		</div>-->
+	<!--	</section>-->
 
-	<!-- Resume -->
-	<section class="grid justify-center items-center bg-[url('website-images/resume-back.jpg')] bg-cover bg-fixed bg-center backdrop-blur-3xl text-white font-serif border-y-4 border-white py-36 mt-32 lg:mt-56" id="resume">
-		<h2 class="text-2xl lg:text-4xl">Give my Resume a read!</h2>
-		<div class="text-center text-2xl pt-10">
-			<button class="border-4 border-white p-2 hover:scale-110"><a href="website-images/JosephMarchbanksResume.pdf" target="_blank"> GET A COPY</a></button>
-		</div>
-	</section>
+	<!--	&lt;!&ndash; Resume &ndash;&gt;-->
+	<!--	<section class="grid justify-center items-center bg-[url('website-images/resume-back.jpg')] bg-cover bg-fixed bg-center backdrop-blur-3xl text-white font-serif border-y-4 border-white py-36 mt-32 lg:mt-56" id="resume">-->
+	<!--		<h2 class="text-2xl lg:text-4xl">Give my Resume a read!</h2>-->
+	<!--		<div class="text-center text-2xl pt-10">-->
+	<!--			<button class="border-4 border-white p-2 hover:scale-110"><a href="website-images/JosephMarchbanksResume.pdf" target="_blank"> GET A COPY</a></button>-->
+	<!--		</div>-->
+	<!--	</section>-->
 
-	<!-- Contact -->
-	<section id="contact" class="flex justify-center items-center font-custom text-[#332211] mt-56">
-		<div class="block md:flex justify-center items-center gap-16">
-			<form class="inline-block *:mb-8">
+	<!--	&lt;!&ndash; Contact &ndash;&gt;-->
+	<!--	<section id="contact" class="flex justify-center items-center font-custom text-[#332211] mt-56">-->
+	<!--		<div class="block md:flex justify-center items-center gap-16">-->
+	<!--			<form class="inline-block *:mb-8">-->
 
-				<!-- Contact name input -->
-				<div class="*:block">
-					<label for="full-name">Full Name:</label>
-					<input type="text" name="full-name" id="full-name" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full" required>
-				</div>
+	<!--				&lt;!&ndash; Contact name input &ndash;&gt;-->
+	<!--				<div class="*:block">-->
+	<!--					<label for="full-name">Full Name:</label>-->
+	<!--					<input type="text" name="full-name" id="full-name" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full" required>-->
+	<!--				</div>-->
 
-				<!-- Contact email input -->
-				<div class="*:block">
-					<label for="email-box">Email:</label>
-					<input type="email" name="email-box" id="email-box" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full" required>
-				</div>
+	<!--				&lt;!&ndash; Contact email input &ndash;&gt;-->
+	<!--				<div class="*:block">-->
+	<!--					<label for="email-box">Email:</label>-->
+	<!--					<input type="email" name="email-box" id="email-box" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full" required>-->
+	<!--				</div>-->
 
-				<!-- Contact message input -->
-				<div class="*:block">
-					<label for="message-box">Message:</label>
-					<textarea name="message-box" id="message-box" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full h-28 overflow-hidden" required maxlength="500"></textarea>
-				</div>
+	<!--				&lt;!&ndash; Contact message input &ndash;&gt;-->
+	<!--				<div class="*:block">-->
+	<!--					<label for="message-box">Message:</label>-->
+	<!--					<textarea name="message-box" id="message-box" class="bg-[#eeeeee] font-serif rounded-lg outline-none p-2 w-full h-28 overflow-hidden" required maxlength="500"></textarea>-->
+	<!--				</div>-->
 
-				<!-- Contact buttons -->
-				<div class="flex justify-center gap-8 *:w-28 *:cursor-pointer">
-					<input type="submit" value="Let's Talk!" class="bg-black text-white rounded-lg p-2 hover:opacity-85 hover:scale-105">
-					<input type="reset" value="Reset" class="bg-black text-white rounded-lg p-2 hover:opacity-85 hover:scale-95">
-				</div>
-			</form>
+	<!--				&lt;!&ndash; Contact buttons &ndash;&gt;-->
+	<!--				<div class="flex justify-center gap-8 *:w-28 *:cursor-pointer">-->
+	<!--					<input type="submit" value="Let's Talk!" class="bg-black text-white rounded-lg p-2 hover:opacity-85 hover:scale-105">-->
+	<!--					<input type="reset" value="Reset" class="bg-black text-white rounded-lg p-2 hover:opacity-85 hover:scale-95">-->
+	<!--				</div>-->
+	<!--			</form>-->
 
-			<!-- Contact links -->
-			<div class="text-4xl *:mb-5">
+	<!--			&lt;!&ndash; Contact links &ndash;&gt;-->
+	<!--			<div class="text-4xl *:mb-5">-->
 
-				<!-- Contact link text -->
-				<h2 class="text-4xl">Email</h2>
-				<p class="text-xl font-serif hover:underline"><a href="mailto:josephmarchbanks599@gmail.com">josephmarchbanks599@gmail.com</a></p>
-				<h2 class="text-4xl">Based In</h2>
-				<p class="text-xl font-serif">Albuquerque, NM</p>
+	<!--				&lt;!&ndash; Contact link text &ndash;&gt;-->
+	<!--				<h2 class="text-4xl">Email</h2>-->
+	<!--				<p class="text-xl font-serif hover:underline"><a href="mailto:josephmarchbanks599@gmail.com">josephmarchbanks599@gmail.com</a></p>-->
+	<!--				<h2 class="text-4xl">Based In</h2>-->
+	<!--				<p class="text-xl font-serif">Albuquerque, NM</p>-->
 
-				<!-- Contact link icons -->
-				<div class="flex gap-8 mt-10">
-					<a href="https://www.linkedin.com/in/joseph-marchbanks-508a362a4/" target="_blank">
-						<img src="website-images/linkedin.svg" alt="LinkedIn Icon" class="w-14 hover:scale-105 hover:invert">
-					</a>
-					<a href="https://github.com/JPHMarchB" target="_blank">
-						<img src="website-images/github.svg" alt="GitHub Icon" class="w-14 hover:scale-105 hover:invert">
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+	<!--				&lt;!&ndash; Contact link icons &ndash;&gt;-->
+	<!--				<div class="flex gap-8 mt-10">-->
+	<!--					<a href="https://www.linkedin.com/in/joseph-marchbanks-508a362a4/" target="_blank">-->
+	<!--						<img src="website-images/linkedin.svg" alt="LinkedIn Icon" class="w-14 hover:scale-105 hover:invert">-->
+	<!--					</a>-->
+	<!--					<a href="https://github.com/JPHMarchB" target="_blank">-->
+	<!--						<img src="website-images/github.svg" alt="GitHub Icon" class="w-14 hover:scale-105 hover:invert">-->
+	<!--					</a>-->
+	<!--				</div>-->
+	<!--			</div>-->
+	<!--		</div>-->
+	<!--	</section>-->
 </main>
 
 <!-- Footer -->
 <footer>
-	<div class="bg-[#506751] font-custom text-white mt-56 p-10">
-		<div>
-			<ul class="block md:flex justify-center items-center gap-8 text-sm text-center md:text-lg">
-				<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>
-				<li class="hover:text-[#ded5b9]"><a href="#experience">Experience</a></li>
-				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>
-				<li class="hover:text-[#ded5b9]"><a href="#resume">Resume</a></li>
-				<li class="hover:text-[#ded5b9]"><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-		<div class="flex justify-center items-center gap-8 mt-5">
-			<a href="https://www.linkedin.com/in/joseph-marchbanks-508a362a4/" target="_blank">
-				<img src="website-images/linkedin.svg" alt="LinkedIn Icon" class="w-10 hover:scale-105">
-			</a>
-			<a href="https://github.com/JPHMarchB" target="_blank">
-				<img src="website-images/github.svg" alt="GitHub Icon" class="w-10 hover:scale-105">
-			</a>
-		</div>
-	</div>
+	<!--	<div class="bg-[#506751] font-custom text-white mt-56 p-10">-->
+	<!--		<div>-->
+	<!--			<ul class="block md:flex justify-center items-center gap-8 text-sm text-center md:text-lg">-->
+	<!--				<li class="hover:text-[#ded5b9]"><a href="#about-me">About Me</a></li>-->
+	<!--				<li class="hover:text-[#ded5b9]"><a href="#experience">Experience</a></li>-->
+	<!--				<li class="hover:text-[#ded5b9]"><a href="#projects">Projects</a></li>-->
+	<!--				<li class="hover:text-[#ded5b9]"><a href="#resume">Resume</a></li>-->
+	<!--				<li class="hover:text-[#ded5b9]"><a href="#contact">Contact</a></li>-->
+	<!--			</ul>-->
+	<!--		</div>-->
+	<!--		<div class="flex justify-center items-center gap-8 mt-5">-->
+	<!--			<a href="https://www.linkedin.com/in/joseph-marchbanks-508a362a4/" target="_blank">-->
+	<!--				<img src="website-images/linkedin.svg" alt="LinkedIn Icon" class="w-10 hover:scale-105">-->
+	<!--			</a>-->
+	<!--			<a href="https://github.com/JPHMarchB" target="_blank">-->
+	<!--				<img src="website-images/github.svg" alt="GitHub Icon" class="w-10 hover:scale-105">-->
+	<!--			</a>-->
+	<!--		</div>-->
+	<!--	</div>-->
 </footer>
 
 </body>
