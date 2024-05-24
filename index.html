@@ -12,20 +12,39 @@
 </head>
 <body class="bg-[#d9b99b]">
 
-<header id="top" class="">
-	<nav class="flex justify-between absolute top-0 z-50 p-6">
+<header id="top" >
+	<nav class="flex justify-between items-center w-full absolute top-0 z-50 font-custom italic text-lg p-8">
 		<div>
 			<h1 class="text-white hidden lg:block">Joseph Marchbanks</h1>
 			<h2 class="block lg:hidden">JM</h2>
+		</div>
+		<div class="flex items-center justify-center gap-8">
+			<p>About</p>
+			<p>Projects</p>
+			<p>Resume</p>
 		</div>
 	</nav>
 </header>
 
 <main class="relative">
 	<!-- component -->
-	<section class="sticky top-0 h-screen flex flex-col items-center justify-center bg-[url('website-images/resume-back.jpg')] bg-center bg-fixed bg-cover">
-		<h2 class="text-4xl text-white">The First Title</h2>
-		<p>Scroll Down</p>
+	<section class="sticky top-0 flex flex-col items-center justify-center">
+		<div class="bg-black text-white py-24 w-full h-screen px-8">
+			<div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24 font-custom tracking-wide">
+				<div class="flex flex-col lg:w-1/3 justify-center items-start">
+					<h1 class="text-3xl md:text-5xl text-blue-200 tracking-loose">Joseph Marchbanks</h1>
+					<h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">Fullstack Software Engineer
+					</h2>
+					<p class="text-sm md:text-base text-gray-50 mb-4">Albuquerque, NM</p>
+					<a href="#"
+					   class="bg-transparent hover:bg-blue-200 text-blue-200 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-blue-200 hover:border-transparent">
+						View Projects</a>
+				</div>
+				<div class="mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
+
+				</div>
+			</div>
+		</div>
 	</section>
 	<section class="sticky top-0 h-screen flex flex-col items-center justify-center bg-indigo-600 text-white">
 		<h2 class="text-4xl">The Second Title</h2>
