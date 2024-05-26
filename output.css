@@ -793,6 +793,39 @@ html{
   }
 }
 
+.card.image-full{
+  display: grid;
+}
+
+.card.image-full:before{
+  position: relative;
+  content: "";
+  z-index: 10;
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+  opacity: 0.75;
+}
+
+.card.image-full:before,
+    .card.image-full > *{
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.card.image-full > figure img{
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card.image-full > .card-body{
+  position: relative;
+  z-index: 20;
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
+}
+
 @media (hover: hover){
   .btn.glass:hover{
     --glass-opacity: 25%;
@@ -917,6 +950,11 @@ html{
   100%{
     transform: scale(1);
   }
+}
+
+.card.image-full :where(figure){
+  overflow: hidden;
+  border-radius: inherit;
 }
 
 @keyframes checkmark{
@@ -1226,6 +1264,14 @@ html{
   position: sticky;
 }
 
+.inset-3{
+  inset: 0.75rem;
+}
+
+.inset-4{
+  inset: 1rem;
+}
+
 .bottom-5{
   bottom: 1.25rem;
 }
@@ -1246,6 +1292,10 @@ html{
   z-index: 50;
 }
 
+.m-12{
+  margin: 3rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1254,6 +1304,11 @@ html{
 .my-12{
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-2{
@@ -1294,6 +1349,22 @@ html{
 
 .mt-56{
   margin-top: 14rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.me-20{
+  margin-inline-end: 5rem;
+}
+
+.ms-20{
+  margin-inline-start: 5rem;
+}
+
+.ms-10{
+  margin-inline-start: 2.5rem;
 }
 
 .block{
@@ -1342,6 +1413,26 @@ html{
 
 .w-full{
   width: 100%;
+}
+
+.w-40{
+  width: 10rem;
+}
+
+.w-28{
+  width: 7rem;
+}
+
+.w-48{
+  width: 12rem;
+}
+
+.w-80{
+  width: 20rem;
+}
+
+.w-96{
+  width: 24rem;
 }
 
 .grid-cols-1{
@@ -1406,6 +1497,10 @@ html{
 
 .rounded-lg{
   border-radius: 0.5rem;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
 }
 
 .border{
@@ -1560,6 +1655,10 @@ html{
   padding: 2rem;
 }
 
+.p-12{
+  padding: 3rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1595,6 +1694,11 @@ html{
   padding-bottom: 9rem;
 }
 
+.py-28{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1617,6 +1721,10 @@ html{
 
 .pt-4{
   padding-top: 1rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-center{
@@ -1678,6 +1786,10 @@ html{
   line-height: 1.625;
 }
 
+.leading-10{
+  line-height: 2.5rem;
+}
+
 .tracking-wide{
   letter-spacing: 0.025em;
 }
@@ -1725,6 +1837,11 @@ html{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -1735,9 +1852,32 @@ html{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-inner{
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.drop-shadow-xl{
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .invert{
@@ -1907,6 +2047,11 @@ html{
     margin-bottom: 6rem;
   }
 
+  .md\:my-12{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .md\:mb-0{
     margin-bottom: 0px;
   }
@@ -2017,6 +2162,10 @@ html{
     margin-top: 14rem;
   }
 
+  .lg\:ms-10{
+    margin-inline-start: 2.5rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -2035,6 +2184,10 @@ html{
 
   .lg\:w-2\/3{
     width: 66.666667%;
+  }
+
+  .lg\:w-full{
+    width: 100%;
   }
 
   .lg\:grid-cols-4{
