@@ -1340,6 +1340,10 @@ html{
   width: 100%;
 }
 
+.w-80{
+  width: 20rem;
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -1614,6 +1618,10 @@ html{
 
 .p-8{
   padding: 2rem;
+}
+
+.p-40{
+  padding: 10rem;
 }
 
 .px-4{
@@ -2069,6 +2077,10 @@ html{
     padding: 2.5rem;
   }
 
+  .md\:p-20{
+    padding: 5rem;
+  }
+
   .md\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;
@@ -2172,6 +2184,10 @@ html{
 
   .lg\:p-32{
     padding: 8rem;
+  }
+
+  .lg\:p-40{
+    padding: 10rem;
   }
 
   .lg\:px-56{
